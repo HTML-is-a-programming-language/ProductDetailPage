@@ -109,7 +109,7 @@
       color: #119de8;
       display: block;
       height: auto;
-      min-height: 32px;
+      min-height: 0;
       max-height: none;
     }
     .feature-group .feature-desc {
@@ -728,7 +728,14 @@
     if (el.closest('.feature-group')) {
       el.setAttribute('dir', 'auto');
       el.style.height = 'auto';
-      el.style.minHeight = el.classList.contains('feature-title') ? '32px' : '0';
+
+      if (el.classList.contains('feature-title')) {
+        const hasHangul = /[가-힣]/.test(el.textContent || '');
+        el.style.minHeight = hasHangul ? '0' : '32px';
+      } else {
+        el.style.minHeight = '0';
+      }
+
       el.style.maxHeight = 'none';
       el.style.whiteSpace = 'normal';
       el.style.overflow = 'visible';
@@ -826,8 +833,18 @@
     inner.style.transform = `scale(${scale})`;
   };
 
+  const updateFeatureTitleMinHeight = () => {
+    stage.querySelectorAll('.feature-group .feature-title').forEach((el) => {
+      const hasHangul = /[가-힣]/.test(el.textContent || '');
+      el.style.height = 'auto';
+      el.style.minHeight = hasHangul ? '0' : '32px';
+      el.style.maxHeight = 'none';
+    });
+  };
+
   const fitAll = () => {
     raf = 0;
+    updateFeatureTitleMinHeight();
     fitted.forEach(fitOne);
   };
 
