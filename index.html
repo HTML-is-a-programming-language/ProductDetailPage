@@ -81,39 +81,44 @@
     /* HERO feature row: icon center = text center */
     .feature-group {
       position: absolute;
-      width: 140px;
+      width: 92px;
+      padding: 0 4px;
       text-align: center;
       transform: translateX(-50%);
       transform-origin: center top;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
     }
     .feature-group .feature-copy {
       position: static;
       width: 100%;
       white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: normal;
       transform: none;
       transform-origin: center top;
-      line-height: 1.2;
+      line-height: 1.16;
+      text-align: center;
     }
     .feature-group .feature-title {
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 800;
       color: #119de8;
-      min-height: 40px;
+      min-height: 58px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
     }
     .feature-group .feature-desc {
-      font-size: 14px;
+      font-size: 11px;
       color: #555;
-      min-height: 34px;
+      min-height: 46px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+      line-height: 1.25;
     }
     .feature-separator {
       position: absolute;
