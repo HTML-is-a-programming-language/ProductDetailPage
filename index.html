@@ -109,7 +109,7 @@
       color: #119de8;
       display: block;
       height: auto;
-      min-height: 0;
+      min-height: 32px;
       max-height: none;
     }
     .feature-group .feature-desc {
@@ -728,7 +728,7 @@
     if (el.closest('.feature-group')) {
       el.setAttribute('dir', 'auto');
       el.style.height = 'auto';
-      el.style.minHeight = '0';
+      el.style.minHeight = el.classList.contains('feature-title') ? '32px' : '0';
       el.style.maxHeight = 'none';
       el.style.whiteSpace = 'normal';
       el.style.overflow = 'visible';
