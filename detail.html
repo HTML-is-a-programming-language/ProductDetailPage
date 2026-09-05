@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>세정티슈 상세소개서</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #eef2f4;
+      color: #202020;
+      font-family: "Noto Sans KR", "Noto Sans CJK KR", "NanumSquare", "Malgun Gothic", sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    img { display: block; max-width: 100%; }
+
+    .main {
+      width: 100%;
+      padding: 24px 12px 60px;
+    }
+    .main-wrap {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .detail-shell {
+      position: relative;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      overflow: hidden;
+      background: #fff;
+    }
+    .detail-stage {
+      position: relative;
+      width: 860px;
+      height: 18154px;
+      transform-origin: left top;
+      will-change: transform;
+    }
+    .detail-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+    }
+    .graphic {
+      position: absolute;
+      display: block;
+      max-width: none;
+    }
+    .detail-section {
+      display: contents;
+    }
+
+    .txt {
+      position: absolute;
+      margin: 0;
+      white-space: nowrap;
+      letter-spacing: -0.045em;
+      line-height: 1;
+      color: #202020;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      transform-origin: left top;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .txt.center { transform-origin: center top; }
+
+    /* HERO feature row: icon center = text center */
+    .feature-copy {
+      width: 140px;
+      text-align: center;
+      transform: translateX(-50%);
+      transform-origin: center top;
+    }
+    .feature-separator {
+      position: absolute;
+      top: 1236px;
+      width: 2px;
+      height: 67px;
+      background: #cee1f0;
+    }
+    .icon-side-copy {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+    }
+    .icon-side-copy .side-title,
+    .icon-side-copy .side-desc {
+      position: static;
+      margin: 0;
+      white-space: normal;
+    }
+    .icon-side-copy .side-title {
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 800;
+      color: #ff8d00;
+      letter-spacing: -0.045em;
+    }
+    .icon-side-copy .side-desc {
+      margin-top: 6px;
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 400;
+      color: #555;
+      letter-spacing: -0.045em;
+    }
+    .cap-side-copy .side-title { font-size: 18px; }
+    .cap-side-copy .side-desc { font-size: 16px; line-height: 1.45; color: #202020; }
+    .txt.wrap { white-space: normal; }
+    .black { color: #202020; }
+    .gray { color: #555; }
+    .blue { color: #119de8; }
+    .orange { color: #ff8d00; }
+    .brown { color: #4e372a; }
+    .white { color: #fff; }
+    .red { color: #b30000; }
+    .bold { font-weight: 800; }
+    .heavy { font-family: "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", sans-serif; font-weight: 900; letter-spacing: -0.055em; }
+    .material-section .heavy,
+    .cap-section .heavy,
+    .ingredient-section .heavy,
+    .formula-section .heavy,
+    .production-section .heavy,
+    .legal-section .heavy {
+      font-family: "Noto Sans KR", "Noto Sans CJK KR", "NanumSquare", sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.055em;
+    }
+    .formula-section .outlined.heavy {
+      font-family: "Noto Sans KR", "Noto Sans CJK KR", "NanumSquare", sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.07em;
+    }
+    .formula-section .outlined { border-width: 2px; }
+    .center { text-align: center; }
+
+    /* HERO: original 860px artwork measured center = x 430px */
+    .hero-section .hero-center {
+      text-align: center;
+      transform-origin: center top;
+    }
+    .hero-section .hero-heavy {
+      font-family: "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+    }
+    .hero-section .hero-pill {
+      width: max-content;
+      transform: translateX(-50%);
+      transform-origin: center top;
+    }
+
+    .outlined {
+      border: 1px solid #4f4f4f;
+      padding: 5px 8px 6px;
+      line-height: 1;
+      background: rgba(255,255,255,.85);
+    }
+    .underline-orange::after {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 5px;
+      margin-top: 12px;
+      background: #ff8d00;
+    }
+    .safe-row {
+      position: absolute;
+      left: 184px;
+      width: 500px;
+      height: 54px;
+      display: grid;
+      grid-template-columns: 245px 34px 166px;
+      column-gap: 18px;
+      align-items: center;
+      color: #b30000;
+      font-size: 23px;
+      letter-spacing: -0.05em;
+      white-space: nowrap;
+    }
+    .safe-row .name {
+      width: 245px;
+      text-align: center;
+    }
+    .safe-row .check {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #c83219;
+      margin: 0;
+      position: relative;
+    }
+    .safe-row .check::after {
+      content: "✓";
+      position: absolute;
+      left: 2px;
+      top: -13px;
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 900;
+      color: #b30000;
+    }
+    .safe-row .value {
+      width: 166px;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      gap: 8px;
+      border-bottom: 1px solid #c83219;
+      padding-bottom: 3px;
+    }
+    .safe-row .value strong { font-size: 25px; }
+    .safe-row .value b { font-size: 49px; line-height: .8; }
+
+
+    .ingredient-item {
+      position: absolute;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 44px;
+    }
+    .ingredient-item .ingredient-badge-img {
+      position: absolute;
+      left: 50%;
+      top: -16px;
+      width: 56px;
+      height: 56px;
+      transform: translateX(-50%);
+      object-fit: contain;
+      max-width: none;
+    }
+    .ingredient-item .ing-title {
+      margin: 0;
+      color: #ff8d00;
+      font-size: 18px;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      white-space: nowrap;
+    }
+    .ingredient-item .ing-desc {
+      margin: 7px 0 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.22;
+      letter-spacing: -0.045em;
+      white-space: normal;
+    }
+
+    .label-blue {
+      display: inline-block;
+      background: #6e98b6;
+      color: #fff;
+      padding: 7px 12px 8px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+
+    /* LEGAL HEADER: restore the icon / title / report-number row */
+    .legal-head-wrap {
+      position: absolute;
+      left: 43px;
+      top: 17602px;
+      width: 520px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 3;
+    }
+    .legal-head-wrap .safe-icon {
+      width: 60px;
+      height: 80px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .legal-head-wrap .head-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #202020;
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    .legal-head-wrap .head-badge {
+      margin: 0 0 0 4px;
+      padding: 5px 10px 6px;
+      border-radius: 14px;
+      background: #5f6061;
+      color: #fff;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+    .legal-brand-wrap {
+      position: absolute;
+      left: 704px;
+      top: 17680px;
+      width: 112px;
+      height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+    }
+    .legal-brand-wrap img {
+      display: block;
+      width: 105px;
+      height: 105px;
+      object-fit: contain;
+      max-width: none;
+    }
+
+    .legal {
+      font-size: 13px;
+      line-height: 1.55;
+      letter-spacing: -0.04em;
+      color: #404040;
+      white-space: normal;
+    }
+    .legal strong { font-weight: 800; }
+    .legal ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+    .legal li { margin: 0 0 2px; }
+
+
+    .txt.fit-ref {
+      display: inline-block;
+      width: max-content;
+      max-width: none;
+      transform-origin: left top;
+    }
+    .txt.fit-ref.fit-center {
+      transform-origin: center top;
+    }
+
+    .txt.fit-center {
+      transform: translateX(-50%);
+    }
+
+
+
+    /* =========================================================
+       MULTILINGUAL / BROWSER TRANSLATION SAFETY
+       - The original Korean text footprint is captured at load.
+       - Translated text is wrapped/fitted inside that footprint.
+       - This prevents translated copy from invading images or
+         neighboring text, including long Latin/RTL translations.
+       ========================================================= */
+    .ml-fit-box {
+      overflow: hidden !important;
+      white-space: normal !important;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      hyphens: auto;
+      unicode-bidi: plaintext;
+      text-wrap: pretty;
+      contain: layout paint;
+    }
+    .ml-fit-box > .ml-fit-inner {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      transform-origin: left top;
+      will-change: transform;
+    }
+    .ml-fit-box.ml-align-center > .ml-fit-inner { transform-origin: center top; }
+    .ml-fit-box.ml-align-right > .ml-fit-inner { transform-origin: right top; }
+
+    /* Broader glyph fallbacks for browser-translated languages. */
+    body, .txt, .icon-side-copy, .ingredient-item, .legal-head-wrap, .safe-row {
+      font-family: "Noto Sans KR", "Noto Sans", "Segoe UI", Arial,
+                   "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    }
+
+    @media (max-width: 860px) {
+      .main { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+<main class="main" id="main">
+<div class="main-wrap" id="main-wrap">
+<div class="detail-shell" id="detail-shell">
+<div class="detail-stage" id="detail-stage">
+<img alt="PSD 원본 860px 그래픽을 유지한 세정티슈 상세페이지 배경 이미지" class="detail-bg" src="assets/base.png"/>
+<!-- 01. HERO -->
+<section aria-label="세정티슈 메인 소개" class="detail-section hero-section">
+<img alt="청소 희희낙낙 시간" class="graphic" src="assets/brand_logo.png" style="left:310px; top:55px; width:240px; height:60px;"/>
+<p class="txt orange bold outlined hero-pill" style="left:430px; top:204px; font-size:22px; border-color:#ff8d00; border-radius:22px; padding:8px 29px 9px;">에탄올 세정티슈</p>
+<p class="txt black hero-heavy hero-center center fit-ref fit-center" style="left:430px; top:260px; font-size:82px;">한 장으로,</p>
+<p class="txt hero-heavy hero-center center fit-ref fit-center" style="left:430px; top:357px; font-size:84px;"><span class="blue">일상이</span> <span class="black">깨끗해지다</span></p>
+<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:500px; font-size:29px;">손이 닿는 모든 곳을 산뜻하고 간편하게!</p>
+<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:550px; font-size:29px;">강력한 에탄올 세정력으로 오염은 깨끗하게!</p>
+<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:600px; font-size:29px;">세정과 탈취를 한 번에, 공간은 더욱 쾌적하게!</p>
+<span class="feature-separator" style="left:305px;"></span>
+<span class="feature-separator" style="left:438px;"></span>
+<span class="feature-separator" style="left:557px;"></span>
+
+<p class="txt blue bold feature-copy" style="left:239.5px; top:1281px; font-size:17px;">에탄올 함유</p>
+<p class="txt gray feature-copy" style="left:239px; top:1306px; font-size:14px;">강력한 세정력</p>
+<p class="txt blue bold feature-copy" style="left:372px; top:1281px; font-size:17px;">간편한 휴대</p>
+<p class="txt gray feature-copy" style="left:372.5px; top:1306px; font-size:14px;">언제 어디서나</p>
+<p class="txt blue bold feature-copy" style="left:499px; top:1281px; font-size:17px;">캡형 보관</p>
+<p class="txt gray feature-copy" style="left:499px; top:1306px; font-size:14px;">마르지 않게</p>
+<p class="txt blue bold feature-copy" style="left:619px; top:1281px; font-size:17px;">넉넉한 50매</p>
+<p class="txt gray feature-copy" style="left:619.5px; top:1306px; font-size:14px;">넓고 도톰한 원단</p>
+</section>
+<!-- 02. BATHROOM -->
+<section aria-label="욕실 사용 예시" class="detail-section bathroom-section">
+<p class="txt black heavy fit-ref" style="left:93px; top:1551px; font-size:44px;">수전 / 세면대 / 변기</p>
+<p class="txt orange heavy fit-ref" style="left:93px; top:1614px; font-size:36px;">물때와 얼룩을</p>
+<p class="txt orange heavy fit-ref" style="left:92px; top:1664px; font-size:36px;">깨끗하게</p>
+<p class="txt gray fit-ref" style="left:93px; top:1738px; font-size:20px;">물때가 낀 수전, 세면대, 변기까지</p>
+<p class="txt gray fit-ref" style="left:93px; top:1772px; font-size:20px;">간편하게 닦아 청결한 욕실을</p>
+<p class="txt gray fit-ref" style="left:93px; top:1805px; font-size:20px;">유지하세요.</p>
+<p class="txt brown center fit-center" style="left:114.5px; top:2042px; font-size:16px;">수전&amp;거울</p>
+<p class="txt brown center fit-center" style="left:224px; top:2042px; font-size:16px;">세면대&amp;욕조</p>
+<p class="txt brown center fit-center" style="left:330.5px; top:2042px; font-size:16px;">변기</p>
+<p class="txt brown bold" style="left:157px; top:2429px; font-size:18px;">물때 &amp; 얼룩 제거</p>
+<p class="txt gray fit-ref" style="left:157px; top:2458px; font-size:16px;">깔끔한 마무리로 쾌적한 욕실 완성!</p>
+</section>
+<!-- 03. SMARTPHONE -->
+<section aria-label="TV와 스마트폰 사용 예시" class="detail-section smartphone-section">
+<p class="txt black heavy fit-ref" style="left:92px; top:2753px; font-size:45px;">TV / 스마트폰</p>
+<p class="txt orange heavy fit-ref" style="left:93px; top:2816px; font-size:34px;">손때와 먼지를 산뜻하게</p>
+<p class="txt gray fit-ref" style="left:89px; top:2889px; font-size:20px;">먼지 끼고 얼룩진 TV는 물론</p>
+<p class="txt gray fit-ref" style="left:89px; top:2924px; font-size:20px;">자주 만지는 스마트폰과 액정</p>
+<p class="txt gray fit-ref" style="left:89px; top:2958px; font-size:20px;">한장으로 깨끗하게 닦아주세요.</p>
+<p class="txt brown bold" style="left:159px; top:3632px; font-size:18px;">지문과 먼지 제거</p>
+<p class="txt gray fit-ref" style="left:159px; top:3662px; font-size:16px;">끈적임 없이 깔끔하고 산뜻하게!</p>
+</section>
+<!-- 04. TABLE -->
+<section aria-label="식탁과 테이블 사용 예시" class="detail-section table-section">
+<p class="txt black heavy fit-ref" style="left:94px; top:3954px; font-size:45px;">식탁 / 테이블</p>
+<p class="txt orange heavy fit-ref" style="left:93px; top:4016px; font-size:34px;">식사 전후, 간편하게</p>
+<p class="txt gray fit-ref" style="left:89px; top:4078px; font-size:20px;">음식물이 튄 자국도 깔끔하게 닦아</p>
+<p class="txt gray fit-ref" style="left:89px; top:4112px; font-size:20px;">늘 깨끗한 식탁을 유지합니다.</p>
+<p class="txt brown bold fit-ref" style="left:156px; top:4852px; font-size:18px;">식탁부터 테이블까지</p>
+<p class="txt gray fit-ref" style="left:157px; top:4880px; font-size:16px;">매일 닿는 공간을 더욱 위생적으로</p>
+</section>
+<!-- 05. KITCHEN -->
+<section aria-label="주방 사용 예시" class="detail-section kitchen-section">
+<img alt="04" class="graphic" src="assets/kitchen_badge04.png" style="left:82px; top:5060px; width:82px; height:80px;"/>
+<img alt="렌지후드 및 인덕션 가스렌지 아이콘" class="graphic" src="assets/kitchen_icons.png" style="left:82px; top:5465px; width:248px; height:100px;"/>
+<p class="txt black heavy fit-ref" style="left:93px; top:5145px; font-size:48px;">인덕션 / 가스렌지 / 렌지후드</p>
+<p class="txt orange heavy fit-ref" style="left:95px; top:5213px; font-size:40px;">기름때와 찌든 때를</p>
+<p class="txt orange heavy fit-ref" style="left:94px; top:5263px; font-size:40px;">말끔하게</p>
+<p class="txt gray fit-ref" style="left:93px; top:5331px; font-size:20px;">기름때가 많은 렌지후드와</p>
+<p class="txt gray fit-ref" style="left:93px; top:5365px; font-size:20px;">가스렌지도 간편하게 닦아</p>
+<p class="txt gray fit-ref" style="left:93px; top:5399px; font-size:20px;">주방을 더욱 깨끗하게 유지하세요.</p>
+<p class="txt brown center" style="left:126px; top:5564px; width:130px; font-size:16px; transform:translateX(-50%);">렌지후드</p>
+<p class="txt brown center" style="left:259px; top:5564px; width:170px; font-size:16px; transform:translateX(-50%);">인덕션&amp;가스렌지</p>
+<p class="txt brown bold fit-ref" style="left:156px; top:6027px; font-size:18px;">기름때, 찌든 때 완벽 제거</p>
+<p class="txt gray fit-ref" style="left:156px; top:6057px; font-size:16px;">강력한 세정력으로 주방을 번쩍번쩍!</p>
+</section>
+<!-- 06. WHY / CLEANING POWER -->
+<section aria-label="세정티슈 특징" class="detail-section why-section">
+<p class="txt black heavy fit-ref" style="left:75px; top:6334px; font-size:98px;">왜?</p>
+<p class="txt orange heavy fit-ref" style="left:71px; top:6463px; font-size:70px;">희희낙낙</p>
+<p class="txt black heavy fit-ref" style="left:70px; top:6547px; font-size:70px;">에탄올 세정티슈일까</p>
+<p class="txt black outlined fit-ref" style="left:77px; top:6680px; font-size:27px;">일상 속 다양한 오염을 간편하고 깨끗하게</p>
+<p class="txt black heavy underline-orange fit-ref" style="left:67px; top:6870px; font-size:42px;">강력한 세정력</p>
+<p class="txt gray fit-ref" style="left:65px; top:6959px; font-size:23px;">에탄올 함유로 기름때, 찌든 때, 먼지 등 다양한 오염을</p>
+<p class="txt gray fit-ref" style="left:65px; top:6998px; font-size:23px;">깔끔하게 제거 합니다.</p>
+<p class="txt black bold fit-ref" style="left:141px; top:7190px; height:38px; line-height:38px; font-size:28px;">주방 여기저기 찌든 기름때도 깔끔하게!</p>
+<p class="txt black bold fit-ref" style="left:142px; top:7753px; height:38px; line-height:38px; font-size:28px;">전자레인지, 에어프라이기 기름때도 간단하게!</p>
+<p class="txt black bold fit-ref" style="left:141px; top:8309px; height:38px; line-height:38px; font-size:28px;">욕실의 얼룩진 물때도 말끔하게!</p>
+</section>
+<!-- 07. MATERIAL -->
+<section aria-label="엠보 원단 소개" class="detail-section material-section">
+<p class="txt black heavy underline-orange fit-ref" style="left:66px; top:8955px; font-size:38px;">도톰한 엠보 원단</p>
+<p class="txt gray fit-ref" style="left:66px; top:9054px; font-size:23px;">도톰하고 탄탄한 엠보 원단이 오염을 효과적으로 흡착하여</p>
+<p class="txt gray fit-ref" style="left:67px; top:9085px; font-size:23px;">간편하고 위생적으로 닦아냅니다.</p>
+<div class="icon-side-copy" style="left:153px; top:9684px; width:120px; height:103px;">
+  <p class="side-title">도톰한 원단</p>
+  <p class="side-desc">쉽게 찢어지지 않는<br/>탄탄한 두께감!</p>
+</div>
+<div class="icon-side-copy" style="left:394px; top:9684px; width:155px; height:103px;">
+  <p class="side-title">엠보 패턴</p>
+  <p class="side-desc">입체 엠보싱원단이<br/>오염원을 효과적으로 흡착!</p>
+</div>
+<div class="icon-side-copy" style="left:669px; top:9684px; width:165px; height:103px;">
+  <p class="side-title">넉넉한 사이즈</p>
+  <p class="side-desc">195×180mm의 넉넉한 크기<br/>한 장으로도 충분!</p>
+</div>
+</section>
+<!-- 08. CAP / PORTABLE -->
+<section aria-label="캡형 보관과 휴대성" class="detail-section cap-section">
+<p class="txt heavy fit-ref" style="left:67px; top:9982px; font-size:38px;">캡타입 뚜껑으로 <span class="orange">편리한 보관성</span></p>
+<p class="txt gray fit-ref" style="left:66px; top:10086px; font-size:23px;">캡타입 뚜껑으로 물티슈 수분을 길게 보존하고</p>
+<p class="txt gray fit-ref" style="left:66px; top:10125px; font-size:23px;">뚜껑을 열고 한장 씩 뽑아 쓰기 간편하게</p>
+<div class="icon-side-copy cap-side-copy" style="left:665px; top:10289px; width:170px; height:103px;">
+  <p class="side-title">캡형 뚜껑</p>
+  <p class="side-desc">한 손으로 열고 닫기 쉬워<br/>사용이 편리해요.</p>
+</div>
+<div class="icon-side-copy cap-side-copy" style="left:665px; top:10424px; width:170px; height:103px;">
+  <p class="side-title">한장씩 쏙!</p>
+  <p class="side-desc">엠보 원단이 한장씩<br/>깔끔하게 잘 뽑혀요.</p>
+</div>
+<p class="txt black bold fit-ref" style="left:64px; top:10669px; font-size:28px;">언제 어디서나 가볍게!</p>
+<p class="txt heavy fit-ref" style="left:64px; top:10711px; font-size:46px;"><span class="orange">간편한</span> 휴대성</p>
+<p class="txt gray" style="left:65px; top:10790px; font-size:23px;">가정에서도 외출시에도</p>
+<p class="txt gray" style="left:65px; top:10822px; font-size:23px;">언제 어디서나 간편하게</p>
+<p class="txt gray" style="left:65px; top:10854px; font-size:23px;">휴대해서 사용할 수 있어요.</p>
+</section>
+<!-- 09. NATURAL INGREDIENT -->
+<section aria-label="자연 유래 성분 소개" class="detail-section ingredient-section">
+<p class="txt black heavy fit-ref" style="left:76px; top:11093px; font-size:76px;">안심 성분</p>
+<p class="txt heavy fit-ref" style="left:69px; top:11199px; font-size:70px;"><span class="orange">자연 유래</span> 성분 함유</p>
+<p class="txt black outlined" style="left:78px; top:11328px; font-size:27px;">강력한 세정력, 산뜻한 탈취 효과</p>
+<p class="txt black heavy underline-orange fit-ref" style="left:66px; top:11522px; font-size:42px;">자연유래 성분4가지</p>
+<p class="txt gray fit-ref" style="left:65px; top:11618px; font-size:23px;">에탄올의 강력한 세정력과 자연 유래 식물 추출물의 순한 사용감을 담아</p>
+<p class="txt gray fit-ref" style="left:65px; top:11658px; font-size:23px;">생활 속 오염을 효과적으로 닦아내고, 불쾌한 냄새 제거에 도움을 줍니다.</p>
+<div class="ingredient-item" style="left:49px; top:11960px; width:150px;">
+  <img class="ingredient-badge-img" src="assets/ingredient_badge_1.png" alt=""/>
+  <p class="ing-title">녹차추출물</p>
+  <p class="ing-desc">세균증식 억제<br/>냄새의 원인 감소<br/>생활악취 완화 도움</p>
+</div>
+<div class="ingredient-item" style="left:225px; top:11960px; width:206px;">
+  <img class="ingredient-badge-img" src="assets/ingredient_badge_2.png" alt=""/>
+  <p class="ing-title">편백나무잎 추출물</p>
+  <p class="ing-desc">세균 곰팡이 증식 억제<br/>냄새의 원인 감소<br/>숲향으로 불쾌한 냄새 완화</p>
+</div>
+<div class="ingredient-item" style="left:442px; top:11960px; width:180px;">
+  <img class="ingredient-badge-img" src="assets/ingredient_badge_3.png" alt=""/>
+  <p class="ing-title">사자발쑥 추출물</p>
+  <p class="ing-desc">항균 및 탈취 작용<br/>미생물 증식 억제<br/>생활 악취 완화에 도움</p>
+</div>
+<div class="ingredient-item" style="left:645px; top:11960px; width:180px;">
+  <img class="ingredient-badge-img" src="assets/ingredient_badge_4.png" alt=""/>
+  <p class="ing-title">감나무잎 추출물</p>
+  <p class="ing-desc">항균 및 항산화 작용<br/>미생물 증식 억제<br/>생활 악취 완화 도움</p>
+</div>
+<p class="txt gray" style="left:70px; top:12125px; font-size:12px;">※ 상기 설명은 원료적 특성에 한합니다.</p>
+</section>
+<!-- 10. FORMULA / SAFETY -->
+<section aria-label="성분과 안전 설계" class="detail-section formula-section">
+<p class="txt black heavy underline-orange fit-ref" style="left:67px; top:12239px; font-size:39px;">청결관리를 돕는 성분</p>
+<p class="txt gray fit-ref" style="left:66px; top:12334px; font-size:23px;">소중한 피부와 생활 환경을 모두 고려한 성분으로</p>
+<p class="txt gray fit-ref" style="left:67px; top:12373px; font-size:23px;">안전하게 설계된 안심 에탄올 세정티슈 입니다.</p>
+<p class="txt orange heavy fit-ref" style="left:66px; top:12483px; font-size:38px;">#에탄올  #라우릴피리디늄클로라이드</p>
+<p class="txt black heavy fit-ref" style="left:66px; top:12543px; font-size:38px;">#부틸렌글라이콜  #레불리닉애씨드  #유칼립투스</p>
+<p class="txt orange heavy fit-ref" style="left:66px; top:12602px; font-size:38px;">#페퍼민트추출물  #소듐글루네이트</p>
+<p class="txt black heavy fit-ref" style="left:66px; top:12661px; font-size:38px;">#허브복합추출물</p>
+<p class="txt white heavy fit-ref" style="left:75px; top:12975px; font-size:82px;">무첨가</p>
+<p class="txt black heavy fit-ref" style="left:74px; top:13099px; font-size:64px;">클린 안심 성분 설계</p>
+<p class="txt gray" style="left:78px; top:13206px; font-size:25px;">화장품 기준에 맞춘 성분 설계와 품질 관리로 안심하고</p>
+<p class="txt gray" style="left:78px; top:13242px; font-size:25px;">사용할 수 있도록 만들었습니다.</p>
+<p class="txt black heavy outlined center" style="left:228px; top:13712px; width:408px; font-size:38px; padding:8px 10px 9px;">유해 우려 성분 8종 무첨가</p>
+<div class="safe-row" style="top:13855px;"><span class="name">가습기살균제성분</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
+<div class="safe-row" style="top:13946px;"><span class="name">포알데히드, 메탄올</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
+<div class="safe-row" style="top:14037px;"><span class="name">아세트알데하이드</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
+<div class="safe-row" style="top:14128px;"><span class="name">클로로포름, 글리옥살</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
+<div class="safe-row" style="top:14219px;"><span class="name">아산화염소, IPBC</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
+<p class="txt black heavy outlined center" style="left:114px; top:14438px; width:629px; font-size:35px; padding:7px 10px 8px;">세정제, 탈취제 안전확인 대상 확인결과서</p>
+<p class="txt label-blue center" style="left:196px; top:14962px; width:468px; font-size:24px;">성분부터 시험까지 꼼꼼하게 검증된 안심 설계</p>
+<p class="txt gray center" style="left:240px; top:15018px; width:380px; font-size:19px;">유해 우려 성분은 배제하고</p>
+<p class="txt gray center" style="left:193px; top:15052px; width:474px; font-size:19px;">외부 시험기관 테스트를 완료한 신뢰할 수 있는 클린 케어</p>
+</section>
+<!-- 11. DOMESTIC PRODUCTION -->
+<section aria-label="국내 생산 공정" class="detail-section production-section">
+<p class="txt black heavy fit-ref" style="left:73px; top:15273px; font-size:82px;">국내생산</p>
+<p class="txt black heavy fit-ref" style="left:78px; top:15386px; font-size:68px;">안심을 위한</p>
+<p class="txt heavy fit-ref" style="left:76px; top:15473px; font-size:68px;">꼼꼼한 <span class="orange">제조 공정</span></p>
+<p class="txt gray fit-ref" style="left:75px; top:15633px; font-size:24px;">원단 가공부터 생산까지 엄격한 품질 관리 기준을 적용하여</p>
+<p class="txt gray fit-ref" style="left:76px; top:15672px; font-size:24px;">전문 제조 시설에서 안전하게 생산합니다.</p>
+<p class="txt white bold center" style="left:224px; top:16244px; width:412px; font-size:25px; background:#707070; padding:7px 10px 8px;">화장품 기준에 맞춘 체계적인 생산 과정</p>
+<p class="txt gray center" style="left:280px; top:16336px; width:300px; font-size:18px;">축적된 오랜 제조 노하우를 바탕으로</p>
+<p class="txt gray center" style="left:127px; top:16366px; width:610px; font-size:18px;">화장품 기준에 맞춘 성분 설계와 엄격한 품질 관리 과정을 통해 생산됩니다.</p>
+</section>
+<!-- 12. LEGAL -->
+<section aria-label="제품 표시사항 및 주의사항" class="detail-section legal-section">
+<div class="legal-head-wrap">
+  <img alt="안전확인" class="safe-icon" src="assets/legal_safe_logo.png"/>
+  <p class="head-title">안전확인대상생활화학제품 표시사항</p>
+  <p class="head-badge">신고번호 : FB25-01-0120</p>
+</div>
+<div class="legal-brand-wrap">
+  <img alt="희희낙낙" src="assets/legal_brand_logo.png"/>
+</div>
+<p class="txt legal" style="left:54px; top:17678px; width:642px; font-size:11.8px; white-space:nowrap;"><strong>ㆍ품목 :</strong> 세정제, 탈취제 <strong>ㆍ제품명 :</strong> 잘닦이는 에탄올 세정티슈 <strong>ㆍ용도 :</strong> 세정제 - 일반용(건물 바닥용), 탈취제 - 일반용(물체용)</p>
+<p class="txt legal" style="left:54px; top:17698px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ제형 :</strong> 티슈형 <strong>ㆍ중량·용량·매수 :</strong> 50매 <strong>ㆍ표준사용량 :</strong> 해당없음 <strong>ㆍ제조연월 :</strong> 별도표기</p>
+<p class="txt legal" style="left:54px; top:17718px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ유통기한 :</strong> 제조일로부터 24개월 <strong>ㆍ제조원 :</strong> 맑은미소 | 경기도 파주시 검산로173번길 102</p>
+<p class="txt legal" style="left:54px; top:17738px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ고객지원센터 :</strong> 031-947-5637 <strong>ㆍ사용 물질 주요물질 :</strong> 부직포, 에탄올, 정제수, 탈취(부틸렌글라이콜 등)</p>
+<p class="txt legal" style="left:54px; top:17758px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ사용방법 :</strong> 한 장씩 뽑아 넓게 펴거나 반으로 접어 세정이 필요한 장소나 물건을 고르게 닦아 줍니다.</p>
+<p class="txt legal" style="left:53px; top:17840px; font-size:13px;"><strong>[주의사항]</strong></p>
+<p class="txt legal" style="left:120px; top:17840px; font-size:13px;">① 다른 제품과 섞어 사용할 경우 인체에 치명적인 손상을 입힐 수 있으니 섞어 사용하지 마시오.</p>
+<p class="txt legal" style="left:120px; top:17863px; font-size:13px;">② 표시사항에 기재된 제품의 용도 외에는 사용하지 마시오.</p>
+<p class="txt legal" style="left:120px; top:17885px; font-size:13px;">③ 변색, 탈색이 우려될 경우에는 먼저 눈에 띄지 않는 부위를 정해 소량으로 테스트해 이상 유무를 확인 후 사용하시오.</p>
+<p class="txt legal" style="left:120px; top:17908px; font-size:13px;">④ 사람 또는 동물에 직접 사용(분사)하지 마시오.</p>
+<p class="txt legal" style="left:120px; top:17930px; font-size:13px;">⑤ 내용물을 마시거나, 내용물이 눈 또는 피부에 닿을 경우 인체에 심각한 손상을 입힐 수 있으니 주의하시오.</p>
+<p class="txt legal" style="left:120px; top:17952px; font-size:13px;">⑥ 어린이 손에 닿지 않는 곳에 보관하고, 입에 넣거나 삼키지 않도록 주의하십시오.</p>
+<p class="txt legal" style="left:120px; top:17975px; font-size:13px;">⑦ 직사광선이나 고온을 피해 보관하시고, 내용물이 마르지 않도록 스티커나 캡을 꼭 닫아 보관하십시오.</p>
+<p class="txt legal" style="left:120px; top:17997px; font-size:13px;">⑧ 바닥 청소시 물기에 의해 미끄러질 수 있으니 주의하시고, 사용 후 변기에 버리면 막히니 휴지통에 버리십시오.</p>
+<p class="txt legal" style="left:53px; top:18043px; font-size:13px;"><strong>[응급처치]</strong></p>
+<p class="txt legal" style="left:120px; top:18043px; font-size:13px;">① 제품에 노출되어 불편함을 느끼거나 피부자극 반응 또는 붉은 반점이 생기면 의사의 도움을 받으십시오.</p>
+<p class="txt legal" style="left:120px; top:18066px; font-size:13px;">② 눈이나 피부에 묻으면 깨끗한 물로 씻고 이상이 있을 경우 의사와 상의하십시오.</p>
+<p class="txt legal" style="left:120px; top:18088px; font-size:13px;">③ 내용물을 먹거나 삼킨 경우 응급 조치를 하고 즉시 의사와 상의하십시오.</p>
+</section>
+</div>
+</div>
+</div>
+</main>
+<script>
+(() => {
+  const stage = document.getElementById('detail-stage');
+  if (!stage) return;
+
+  const FIT_SELECTOR = [
+    '.txt',
+    '.icon-side-copy .side-title',
+    '.icon-side-copy .side-desc',
+    '.ingredient-item .ing-title',
+    '.ingredient-item .ing-desc',
+    '.legal-head-wrap .head-title',
+    '.legal-head-wrap .head-badge',
+    '.safe-row .name',
+    '.safe-row .value strong'
+  ].join(',');
+
+  const fitted = [];
+  let raf = 0;
+
+  const toNumber = (value, fallback = 0) => {
+    const n = parseFloat(value);
+    return Number.isFinite(n) ? n : fallback;
+  };
+
+  const ensureInner = (el) => {
+    let inner = el.querySelector(':scope > .ml-fit-inner');
+    if (inner) return inner;
+
+    inner = document.createElement('span');
+    inner.className = 'ml-fit-inner';
+    while (el.firstChild) inner.appendChild(el.firstChild);
+    el.appendChild(inner);
+    return inner;
+  };
+
+  const prepare = (el) => {
+    if (!el || el.dataset.mlFitReady === '1') return;
+
+    const cs = getComputedStyle(el);
+    const fontSize = Math.max(1, toNumber(cs.fontSize, 16));
+    const lineHeightPx = cs.lineHeight === 'normal'
+      ? fontSize * 1.25
+      : Math.max(1, toNumber(cs.lineHeight, fontSize * 1.25));
+
+    // offsetWidth/offsetHeight ignore the responsive transform on .detail-stage,
+    // so these values remain in the original 860px design coordinate system.
+    const width = Math.max(4, Math.ceil(el.offsetWidth) + 2);
+    const height = Math.max(4, Math.ceil(el.offsetHeight) + 2);
+
+    el.dataset.mlFitReady = '1';
+    el.dataset.mlBaseFont = String(fontSize);
+    el.dataset.mlLineRatio = String(lineHeightPx / fontSize);
+    el.dataset.mlBoxWidth = String(width);
+    el.dataset.mlBoxHeight = String(height);
+
+    const align = cs.textAlign;
+    if (align === 'center' || el.classList.contains('center')) {
+      el.classList.add('ml-align-center');
+    } else if (align === 'right' || align === 'end') {
+      el.classList.add('ml-align-right');
+    }
+
+    el.classList.add('ml-fit-box');
+    el.setAttribute('dir', 'auto');
+    el.style.width = `${width}px`;
+    el.style.height = `${height}px`;
+    el.style.maxWidth = `${width}px`;
+    el.style.maxHeight = `${height}px`;
+    el.style.minWidth = '0';
+    el.style.minHeight = '0';
+
+    ensureInner(el);
+    fitted.push(el);
+  };
+
+  const visuallyFits = (el) => {
+    return el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= el.clientHeight + 1;
+  };
+
+  const fitOne = (el) => {
+    if (!el || !el.isConnected) return;
+
+    const inner = ensureInner(el);
+    const baseFont = Math.max(1, toNumber(el.dataset.mlBaseFont, 16));
+    const lineRatio = Math.max(0.75, toNumber(el.dataset.mlLineRatio, 1.25));
+
+    // Reset any previous fit before measuring the translated content again.
+    inner.style.transform = 'none';
+    inner.style.width = '100%';
+    el.style.fontSize = `${baseFont}px`;
+    el.style.lineHeight = `${baseFont * lineRatio}px`;
+    el.style.letterSpacing = '';
+
+    if (visuallyFits(el)) return;
+
+    // Binary search keeps text as large as possible while staying inside
+    // the original Korean design footprint.
+    let low = Math.min(4, baseFont);
+    let high = baseFont;
+    let best = low;
+
+    for (let i = 0; i < 14; i += 1) {
+      const mid = (low + high) / 2;
+      el.style.fontSize = `${mid}px`;
+      el.style.lineHeight = `${mid * lineRatio}px`;
+
+      if (visuallyFits(el)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    el.style.fontSize = `${best}px`;
+    el.style.lineHeight = `${best * lineRatio}px`;
+
+    if (visuallyFits(el)) return;
+
+    // Extreme fallback for unusually long machine translations.
+    // Scale the inner content visually rather than allowing clipping/overlap.
+    const contentWidth = Math.max(inner.scrollWidth, inner.getBoundingClientRect().width, 1);
+    const contentHeight = Math.max(inner.scrollHeight, inner.getBoundingClientRect().height, 1);
+    const scaleX = Math.min(1, el.clientWidth / contentWidth);
+    const scaleY = Math.min(1, el.clientHeight / contentHeight);
+    const scale = Math.max(0.08, Math.min(scaleX, scaleY, 1));
+    inner.style.transform = `scale(${scale})`;
+  };
+
+  const fitAll = () => {
+    raf = 0;
+    fitted.forEach(fitOne);
+  };
+
+  const requestFit = () => {
+    if (raf) return;
+    raf = requestAnimationFrame(fitAll);
+  };
+
+  // Capture original Korean footprints immediately, before browser translation
+  // normally starts modifying the DOM.
+  stage.querySelectorAll(FIT_SELECTOR).forEach(prepare);
+  fitAll();
+
+  // Chrome/Edge translation may replace text nodes or insert wrapper elements.
+  // Re-fit whenever translated text changes.
+  const observer = new MutationObserver((mutations) => {
+    let needsFit = false;
+    for (const mutation of mutations) {
+      if (mutation.type === 'characterData' || mutation.type === 'childList') {
+        needsFit = true;
+        break;
+      }
+    }
+    if (needsFit) requestFit();
+  });
+
+  observer.observe(stage, {
+    subtree: true,
+    childList: true,
+    characterData: true
+  });
+
+  // Re-check after web fonts, page restore and delayed browser translation.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(requestFit).catch(() => {});
+  }
+  window.addEventListener('pageshow', requestFit, { passive: true });
+  window.addEventListener('languagechange', requestFit, { passive: true });
+  window.addEventListener('resize', requestFit, { passive: true });
+  setTimeout(requestFit, 250);
+  setTimeout(requestFit, 1000);
+  setTimeout(requestFit, 2500);
+})();
+</script>
+
+<script>(() => {
+  const shell = document.getElementById('detail-shell');
+  const stage = document.getElementById('detail-stage');
+  const BASE_WIDTH = 860;
+  const BASE_HEIGHT = 18154;
+
+  const resize = () => {
+    const renderWidth = Math.min(shell.clientWidth, BASE_WIDTH);
+    const scale = renderWidth / BASE_WIDTH;
+
+    // Responsive handling is intentionally limited to this one scale.
+    // Text coordinates, font sizes, images and icons stay at their original 860px values.
+    stage.style.transform = `scale(${scale})`;
+    shell.style.height = `${BASE_HEIGHT * scale}px`;
+  };
+
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(resize).observe(shell);
+  }
+})();</script>
+</body>
+</html>
