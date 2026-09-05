@@ -233,6 +233,11 @@
       overflow: visible;
     }
 
+    .hero-section .hero-dynamic-title.is-translated {
+      font-size: var(--hero-translated-size, 56px) !important;
+      line-height: 1.05 !important;
+    }
+
     .outlined {
       border: 1px solid #4f4f4f;
       padding: 5px 8px 6px;
@@ -863,6 +868,56 @@
     inner.style.transform = `scale(${scale})`;
   };
 
+
+  const updateHeroTranslatedTitles = () => {
+    const titles = [...stage.querySelectorAll('.hero-dynamic-title')];
+    if (titles.length < 2) return;
+
+    const hasHangul = titles.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    // 한국어 원본은 기존 디자인의 서로 다른 크기를 그대로 유지
+    if (hasHangul) {
+      titles.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--hero-translated-size');
+      });
+      return;
+    }
+
+    // 번역된 경우 위/아래 제목을 완전히 같은 글자 크기로 맞춤
+    titles.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 820; // 860px 디자인 안에서 좌우 안전 여백 확보
+    let low = 28;
+    let high = 84;
+    let best = 28;
+
+    const fitsAt = (size) => {
+      titles.forEach((el) => {
+        el.style.setProperty('--hero-translated-size', `${size}px`);
+      });
+
+      return titles.every((el) => {
+        // transform: translateX(-50%)는 폭 계산에 영향이 없으므로 scrollWidth 기준
+        return el.scrollWidth <= maxWidth;
+      });
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    titles.forEach((el) => {
+      el.style.setProperty('--hero-translated-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
   const updateFeatureTitleMinHeight = () => {
     stage.querySelectorAll('.feature-group .feature-title').forEach((el) => {
       const hasHangul = /[가-힣]/.test(el.textContent || '');
@@ -874,6 +929,7 @@
 
   const fitAll = () => {
     raf = 0;
+    updateHeroTranslatedTitles();
     updateFeatureTitleMinHeight();
     fitted.forEach(fitOne);
   };
