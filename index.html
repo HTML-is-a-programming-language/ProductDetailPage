@@ -79,11 +79,41 @@
     .txt.center { transform-origin: center top; }
 
     /* HERO feature row: icon center = text center */
-    .feature-copy {
+    .feature-group {
+      position: absolute;
       width: 140px;
       text-align: center;
       transform: translateX(-50%);
       transform-origin: center top;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .feature-group .feature-copy {
+      position: static;
+      width: 100%;
+      white-space: normal;
+      transform: none;
+      transform-origin: center top;
+      line-height: 1.2;
+    }
+    .feature-group .feature-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #119de8;
+      min-height: 40px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .feature-group .feature-desc {
+      font-size: 14px;
+      color: #555;
+      min-height: 34px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
     }
     .feature-separator {
       position: absolute;
@@ -424,14 +454,22 @@
 <span class="feature-separator" style="left:438px;"></span>
 <span class="feature-separator" style="left:557px;"></span>
 
-<p class="txt blue bold feature-copy" style="left:239.5px; top:1281px; font-size:17px;">에탄올 함유</p>
-<p class="txt gray feature-copy" style="left:239px; top:1306px; font-size:14px;">강력한 세정력</p>
-<p class="txt blue bold feature-copy" style="left:372px; top:1281px; font-size:17px;">간편한 휴대</p>
-<p class="txt gray feature-copy" style="left:372.5px; top:1306px; font-size:14px;">언제 어디서나</p>
-<p class="txt blue bold feature-copy" style="left:499px; top:1281px; font-size:17px;">캡형 보관</p>
-<p class="txt gray feature-copy" style="left:499px; top:1306px; font-size:14px;">마르지 않게</p>
-<p class="txt blue bold feature-copy" style="left:619px; top:1281px; font-size:17px;">넉넉한 50매</p>
-<p class="txt gray feature-copy" style="left:619.5px; top:1306px; font-size:14px;">넓고 도톰한 원단</p>
+<div class="feature-group" style="left:239.5px; top:1281px;">
+<p class="txt feature-copy feature-title">에탄올 함유</p>
+<p class="txt feature-copy feature-desc">강력한 세정력</p>
+</div>
+<div class="feature-group" style="left:372px; top:1281px;">
+<p class="txt feature-copy feature-title">간편한 휴대</p>
+<p class="txt feature-copy feature-desc">언제 어디서나</p>
+</div>
+<div class="feature-group" style="left:499px; top:1281px;">
+<p class="txt feature-copy feature-title">캡형 보관</p>
+<p class="txt feature-copy feature-desc">마르지 않게</p>
+</div>
+<div class="feature-group" style="left:619px; top:1281px;">
+<p class="txt feature-copy feature-title">넉넉한 50매</p>
+<p class="txt feature-copy feature-desc">넓고 도톰한 원단</p>
+</div>
 </section>
 <!-- 02. BATHROOM -->
 <section aria-label="욕실 사용 예시" class="detail-section bathroom-section">
