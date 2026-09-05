@@ -223,6 +223,16 @@
       transform-origin: center top;
     }
 
+    .hero-section .hero-dynamic-title {
+      width: auto;
+      max-width: none;
+      height: auto;
+      min-height: 0;
+      max-height: none;
+      white-space: nowrap;
+      overflow: visible;
+    }
+
     .outlined {
       border: 1px solid #4f4f4f;
       padding: 5px 8px 6px;
@@ -472,8 +482,8 @@
 <section aria-label="세정티슈 메인 소개" class="detail-section hero-section">
 <img alt="청소 희희낙낙 시간" class="graphic" src="assets/brand_logo.png" style="left:310px; top:55px; width:240px; height:60px;"/>
 <p class="txt orange bold outlined hero-pill" style="left:430px; top:204px; font-size:22px; border-color:#ff8d00; border-radius:26px;">에탄올 세정티슈</p>
-<p class="txt black hero-heavy hero-center center fit-ref fit-center" style="left:430px; top:260px; font-size:82px;">한 장으로,</p>
-<p class="txt hero-heavy hero-center center fit-ref fit-center" style="left:430px; top:357px; font-size:84px;"><span class="blue">일상이</span> <span class="black">깨끗해지다</span></p>
+<p class="txt black hero-heavy hero-center center fit-ref fit-center hero-dynamic-title" style="left:430px; top:260px; font-size:82px;">한 장으로,</p>
+<p class="txt hero-heavy hero-center center fit-ref fit-center hero-dynamic-title" style="left:430px; top:357px; font-size:84px;"><span class="blue">일상이</span> <span class="black">깨끗해지다</span></p>
 <p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:500px; font-size:29px;">손이 닿는 모든 곳을 산뜻하고 간편하게!</p>
 <p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:550px; font-size:29px;">강력한 에탄올 세정력으로 오염은 깨끗하게!</p>
 <p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:600px; font-size:29px;">세정과 탈취를 한 번에, 공간은 더욱 쾌적하게!</p>
@@ -732,6 +742,18 @@
 
   const prepare = (el) => {
     if (!el || el.dataset.mlFitReady === '1') return;
+
+    if (el.classList.contains('hero-dynamic-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
 
     if (el.closest('.feature-group')) {
       el.setAttribute('dir', 'auto');
