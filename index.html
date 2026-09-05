@@ -123,6 +123,19 @@
       margin-top: 0;
     }
 
+    .feature-group .feature-desc-fixed-first {
+      width: 150px !important;
+      max-width: none !important;
+      font-size: 14px !important;
+      line-height: 1.1 !important;
+      white-space: nowrap !important;
+      overflow: visible !important;
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+      text-align: center;
+    }
+
     .feature-group .feature-copy.ml-fit-box {
       height: auto !important;
       min-height: 0 !important;
@@ -169,6 +182,40 @@
       color: #555;
       letter-spacing: -0.045em;
     }
+
+    .material-first-copy.is-translated .side-desc {
+      margin-top: 1px !important;
+    }
+
+    .cap-section .cap-gray-copy-fixed {
+      font-size: 23px !important;
+      line-height: 1.15 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .ingredient-section .ingredient-outlined-tag {
+      min-width: 0 !important;
+      min-height: 42px !important;
+      height: 42px !important;
+      padding: 0 10px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      line-height: 1.1 !important;
+      white-space: nowrap !important;
+    }
+
+    .ingredient-section .ingredient-gray-copy.is-translated {
+      font-size: var(--ingredient-gray-size, 23px) !important;
+      line-height: 1.1 !important;
+    }
     .cap-side-copy .side-title { font-size: 18px; }
     .cap-side-copy .side-desc { font-size: 16px; line-height: 1.45; color: #202020; }
     .txt.wrap { white-space: normal; }
@@ -212,15 +259,16 @@
     .hero-section .hero-pill {
       width: 222px;
       height: 52px;
-      padding: 0 18px;
+      padding: 0 14px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      white-space: normal;
-      line-height: 1.1;
+      white-space: nowrap;
+      line-height: 1;
       transform: translateX(-50%);
       transform-origin: center top;
+      overflow: hidden;
     }
 
     .hero-section .hero-dynamic-title {
@@ -236,6 +284,168 @@
     .hero-section .hero-dynamic-title.is-translated {
       font-size: var(--hero-translated-size, 56px) !important;
       line-height: 1.05 !important;
+    }
+
+    .hero-section .hero-subcopy.is-translated {
+      font-size: var(--hero-subcopy-size, 29px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .bathroom-section .bathroom-orange-title.is-translated {
+      font-size: var(--bathroom-title-size, 36px) !important;
+      line-height: 1.05 !important;
+    }
+
+    .bathroom-section .bathroom-gray-copy.is-translated {
+      font-size: var(--bathroom-gray-size, 20px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .bathroom-section .bathroom-label.is-translated {
+      width: 108px !important;
+      max-width: 108px !important;
+      font-size: var(--bathroom-label-size, 16px) !important;
+      line-height: 1.1 !important;
+      white-space: nowrap !important;
+      text-align: center !important;
+    }
+
+    .bathroom-section .bathroom-result-title {
+      font-size: 18px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .bathroom-section .bathroom-result-desc {
+      font-size: 16px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .smartphone-section .smartphone-result-title {
+      font-size: 18px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .smartphone-section .smartphone-result-desc {
+      font-size: 16px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .table-section .table-gray-copy.is-translated {
+      font-size: var(--table-gray-size, 20px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .table-section .table-result-title {
+      font-size: 18px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .table-section .table-result-desc {
+      font-size: 16px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .kitchen-section .kitchen-orange-title.is-translated {
+      font-size: var(--kitchen-title-size, 40px) !important;
+      line-height: 1.05 !important;
+    }
+
+    .kitchen-section .kitchen-gray-copy.is-translated {
+      font-size: var(--kitchen-gray-size, 20px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .kitchen-section .kitchen-result-title {
+      font-size: 18px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .kitchen-section .kitchen-result-desc {
+      font-size: 16px !important;
+      line-height: 1.2 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .why-section .why-outlined-tag.is-korean {
+      width: max-content !important;
+      max-width: none !important;
+      height: auto !important;
+      max-height: none !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
+      white-space: nowrap !important;
+      overflow: visible !important;
+    }
+
+    .why-section .why-gray-copy.is-translated {
+      font-size: var(--why-gray-size, 23px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .why-section .why-checkline,
+    .why-section .why-checkline.is-translated {
+      font-size: var(--why-checkline-size, 28px) !important;
+      height: 38px !important;
+      line-height: 38px !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+      vertical-align: middle !important;
+    }
+
+    .material-section .material-gray-copy.is-translated {
+      font-size: var(--material-gray-size, 23px) !important;
+      line-height: 1.1 !important;
     }
 
     .outlined {
@@ -328,6 +538,108 @@
       letter-spacing: -0.045em;
       white-space: nowrap;
     }
+
+    .ingredient-item .ingredient-item-title.is-translated {
+      font-size: var(--ingredient-item-title-size, 18px) !important;
+      line-height: 1.08 !important;
+      white-space: normal !important;
+      min-height: 38px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .ingredient-section .ingredient-note-fixed {
+      font-size: 12px !important;
+      line-height: 1.15 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .ingredient-section .ingredient-main-title-fixed {
+      font-size: 47px !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .final-section .final-gray-copy.is-translated {
+      font-size: var(--final-gray-size, 23px) !important;
+      line-height: 1.1 !important;
+    }
+
+    .formula-section .formula-tagline.is-translated {
+      font-size: var(--formula-tagline-size, 38px) !important;
+      line-height: 1.08 !important;
+    }
+
+    .formula-section .no-additives-fixed {
+      font-size: 82px !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .formula-section .formula-gray-copy.is-translated {
+      font-size: var(--formula-gray-size, 25px) !important;
+      line-height: 1.1 !important;
+      white-space: nowrap !important;
+    }
+
+    .formula-section .formula-safe-title {
+      width: 408px !important;
+      height: 60px !important;
+      padding: 0 10px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      line-height: 1.05 !important;
+    }
+
+    .formula-section .formula-safe-title > .ml-fit-inner {
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .formula-section .formula-bottom-copy.is-translated {
+      font-size: var(--formula-bottom-size, 19px) !important;
+      line-height: 1.15 !important;
+      white-space: nowrap !important;
+    }
+
+    .production-section .production-title-line {
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+      line-height: 1 !important;
+    }
+
+    .production-section .production-bottom-copy.is-translated {
+      font-size: var(--production-bottom-size, 18px) !important;
+      line-height: 1.15 !important;
+      white-space: nowrap !important;
+    }
     .ingredient-item .ing-desc {
       margin: 7px 0 0;
       color: #555;
@@ -388,6 +700,10 @@
       letter-spacing: -0.035em;
       white-space: nowrap;
       flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     .legal-brand-wrap {
       position: absolute;
@@ -416,6 +732,16 @@
       white-space: normal;
     }
     .legal strong { font-weight: 800; }
+
+    .legal-section .legal-summary-line {
+      white-space: nowrap !important;
+      line-height: 1.55 !important;
+    }
+
+    .legal-section .legal-caution-line {
+      white-space: nowrap !important;
+      line-height: 1.5 !important;
+    }
     .legal ul {
       margin: 0;
       padding-left: 1.2em;
@@ -489,16 +815,16 @@
 <p class="txt orange bold outlined hero-pill" style="left:430px; top:204px; font-size:22px; border-color:#ff8d00; border-radius:26px;">에탄올 세정티슈</p>
 <p class="txt black hero-heavy hero-center center fit-ref fit-center hero-dynamic-title" style="left:430px; top:260px; font-size:82px;">한 장으로,</p>
 <p class="txt hero-heavy hero-center center fit-ref fit-center hero-dynamic-title" style="left:430px; top:357px; font-size:84px;"><span class="blue">일상이</span> <span class="black">깨끗해지다</span></p>
-<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:500px; font-size:29px;">손이 닿는 모든 곳을 산뜻하고 간편하게!</p>
-<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:550px; font-size:29px;">강력한 에탄올 세정력으로 오염은 깨끗하게!</p>
-<p class="txt gray hero-center center fit-ref fit-center" style="left:430px; top:600px; font-size:29px;">세정과 탈취를 한 번에, 공간은 더욱 쾌적하게!</p>
+<p class="txt gray hero-center center fit-ref fit-center hero-subcopy" style="left:430px; top:500px; font-size:29px;">손이 닿는 모든 곳을 산뜻하고 간편하게!</p>
+<p class="txt gray hero-center center fit-ref fit-center hero-subcopy" style="left:430px; top:550px; font-size:29px;">강력한 에탄올 세정력으로 오염은 깨끗하게!</p>
+<p class="txt gray hero-center center fit-ref fit-center hero-subcopy" style="left:430px; top:600px; font-size:29px;">세정과 탈취를 한 번에, 공간은 더욱 쾌적하게!</p>
 <span class="feature-separator" style="left:305px;"></span>
 <span class="feature-separator" style="left:438px;"></span>
 <span class="feature-separator" style="left:557px;"></span>
 
 <div class="feature-group" style="left:239.5px; top:1281px;">
 <p class="txt feature-copy feature-title">에탄올 함유</p>
-<p class="txt feature-copy feature-desc">강력한 세정력</p>
+<p class="txt feature-copy feature-desc feature-desc-fixed-first">강력한 세정력</p>
 </div>
 <div class="feature-group" style="left:372px; top:1281px;">
 <p class="txt feature-copy feature-title">간편한 휴대</p>
@@ -516,16 +842,16 @@
 <!-- 02. BATHROOM -->
 <section aria-label="욕실 사용 예시" class="detail-section bathroom-section">
 <p class="txt black heavy fit-ref" style="left:93px; top:1551px; font-size:44px;">수전 / 세면대 / 변기</p>
-<p class="txt orange heavy fit-ref" style="left:93px; top:1614px; font-size:36px;">물때와 얼룩을</p>
-<p class="txt orange heavy fit-ref" style="left:92px; top:1664px; font-size:36px;">깨끗하게</p>
-<p class="txt gray fit-ref" style="left:93px; top:1738px; font-size:20px;">물때가 낀 수전, 세면대, 변기까지</p>
-<p class="txt gray fit-ref" style="left:93px; top:1772px; font-size:20px;">간편하게 닦아 청결한 욕실을</p>
-<p class="txt gray fit-ref" style="left:93px; top:1805px; font-size:20px;">유지하세요.</p>
-<p class="txt brown center fit-center" style="left:114.5px; top:2042px; font-size:16px;">수전&amp;거울</p>
-<p class="txt brown center fit-center" style="left:224px; top:2042px; font-size:16px;">세면대&amp;욕조</p>
-<p class="txt brown center fit-center" style="left:330.5px; top:2042px; font-size:16px;">변기</p>
-<p class="txt brown bold" style="left:157px; top:2429px; font-size:18px;">물때 &amp; 얼룩 제거</p>
-<p class="txt gray fit-ref" style="left:157px; top:2458px; font-size:16px;">깔끔한 마무리로 쾌적한 욕실 완성!</p>
+<p class="txt orange heavy fit-ref bathroom-orange-title" style="left:93px; top:1614px; font-size:36px;">물때와 얼룩을</p>
+<p class="txt orange heavy fit-ref bathroom-orange-title" style="left:92px; top:1664px; font-size:36px;">깨끗하게</p>
+<p class="txt gray fit-ref bathroom-gray-copy" style="left:93px; top:1738px; font-size:20px;">물때가 낀 수전, 세면대, 변기까지</p>
+<p class="txt gray fit-ref bathroom-gray-copy" style="left:93px; top:1772px; font-size:20px;">간편하게 닦아 청결한 욕실을</p>
+<p class="txt gray fit-ref bathroom-gray-copy" style="left:93px; top:1805px; font-size:20px;">유지하세요.</p>
+<p class="txt brown center fit-center bathroom-label" style="left:114.5px; top:2042px; font-size:16px;">수전&amp;거울</p>
+<p class="txt brown center fit-center bathroom-label" style="left:224px; top:2042px; font-size:16px;">세면대&amp;욕조</p>
+<p class="txt brown center fit-center bathroom-label" style="left:330.5px; top:2042px; font-size:16px;">변기</p>
+<p class="txt brown bold bathroom-result-title" style="left:157px; top:2429px; font-size:18px;">물때 &amp; 얼룩 제거</p>
+<p class="txt gray fit-ref bathroom-result-desc" style="left:157px; top:2458px; font-size:16px;">깔끔한 마무리로 쾌적한 욕실 완성!</p>
 </section>
 <!-- 03. SMARTPHONE -->
 <section aria-label="TV와 스마트폰 사용 예시" class="detail-section smartphone-section">
@@ -534,52 +860,52 @@
 <p class="txt gray fit-ref" style="left:89px; top:2889px; font-size:20px;">먼지 끼고 얼룩진 TV는 물론</p>
 <p class="txt gray fit-ref" style="left:89px; top:2924px; font-size:20px;">자주 만지는 스마트폰과 액정</p>
 <p class="txt gray fit-ref" style="left:89px; top:2958px; font-size:20px;">한장으로 깨끗하게 닦아주세요.</p>
-<p class="txt brown bold" style="left:159px; top:3632px; font-size:18px;">지문과 먼지 제거</p>
-<p class="txt gray fit-ref" style="left:159px; top:3662px; font-size:16px;">끈적임 없이 깔끔하고 산뜻하게!</p>
+<p class="txt brown bold smartphone-result-title" style="left:159px; top:3632px; font-size:18px;">지문과 먼지 제거</p>
+<p class="txt gray fit-ref smartphone-result-desc" style="left:159px; top:3662px; font-size:16px;">끈적임 없이 깔끔하고 산뜻하게!</p>
 </section>
 <!-- 04. TABLE -->
 <section aria-label="식탁과 테이블 사용 예시" class="detail-section table-section">
 <p class="txt black heavy fit-ref" style="left:94px; top:3954px; font-size:45px;">식탁 / 테이블</p>
 <p class="txt orange heavy fit-ref" style="left:93px; top:4016px; font-size:34px;">식사 전후, 간편하게</p>
-<p class="txt gray fit-ref" style="left:89px; top:4078px; font-size:20px;">음식물이 튄 자국도 깔끔하게 닦아</p>
-<p class="txt gray fit-ref" style="left:89px; top:4112px; font-size:20px;">늘 깨끗한 식탁을 유지합니다.</p>
-<p class="txt brown bold fit-ref" style="left:156px; top:4852px; font-size:18px;">식탁부터 테이블까지</p>
-<p class="txt gray fit-ref" style="left:157px; top:4880px; font-size:16px;">매일 닿는 공간을 더욱 위생적으로</p>
+<p class="txt gray fit-ref table-gray-copy" style="left:89px; top:4078px; font-size:20px;">음식물이 튄 자국도 깔끔하게 닦아</p>
+<p class="txt gray fit-ref table-gray-copy" style="left:89px; top:4112px; font-size:20px;">늘 깨끗한 식탁을 유지합니다.</p>
+<p class="txt brown bold fit-ref table-result-title" style="left:156px; top:4852px; font-size:18px;">식탁부터 테이블까지</p>
+<p class="txt gray fit-ref table-result-desc" style="left:157px; top:4880px; font-size:16px;">매일 닿는 공간을 더욱 위생적으로</p>
 </section>
 <!-- 05. KITCHEN -->
 <section aria-label="주방 사용 예시" class="detail-section kitchen-section">
 <img alt="04" class="graphic" src="assets/kitchen_badge04.png" style="left:82px; top:5060px; width:82px; height:80px;"/>
 <img alt="렌지후드 및 인덕션 가스렌지 아이콘" class="graphic" src="assets/kitchen_icons.png" style="left:82px; top:5465px; width:248px; height:100px;"/>
 <p class="txt black heavy fit-ref" style="left:93px; top:5145px; font-size:48px;">인덕션 / 가스렌지 / 렌지후드</p>
-<p class="txt orange heavy fit-ref" style="left:95px; top:5213px; font-size:40px;">기름때와 찌든 때를</p>
-<p class="txt orange heavy fit-ref" style="left:94px; top:5263px; font-size:40px;">말끔하게</p>
-<p class="txt gray fit-ref" style="left:93px; top:5331px; font-size:20px;">기름때가 많은 렌지후드와</p>
-<p class="txt gray fit-ref" style="left:93px; top:5365px; font-size:20px;">가스렌지도 간편하게 닦아</p>
-<p class="txt gray fit-ref" style="left:93px; top:5399px; font-size:20px;">주방을 더욱 깨끗하게 유지하세요.</p>
+<p class="txt orange heavy fit-ref kitchen-orange-title" style="left:95px; top:5213px; font-size:40px;">기름때와 찌든 때를</p>
+<p class="txt orange heavy fit-ref kitchen-orange-title" style="left:94px; top:5263px; font-size:40px;">말끔하게</p>
+<p class="txt gray fit-ref kitchen-gray-copy" style="left:93px; top:5331px; font-size:20px;">기름때가 많은 렌지후드와</p>
+<p class="txt gray fit-ref kitchen-gray-copy" style="left:93px; top:5365px; font-size:20px;">가스렌지도 간편하게 닦아</p>
+<p class="txt gray fit-ref kitchen-gray-copy" style="left:93px; top:5399px; font-size:20px;">주방을 더욱 깨끗하게 유지하세요.</p>
 <p class="txt brown center" style="left:126px; top:5564px; width:130px; font-size:16px; transform:translateX(-50%);">렌지후드</p>
 <p class="txt brown center" style="left:259px; top:5564px; width:170px; font-size:16px; transform:translateX(-50%);">인덕션&amp;가스렌지</p>
-<p class="txt brown bold fit-ref" style="left:156px; top:6027px; font-size:18px;">기름때, 찌든 때 완벽 제거</p>
-<p class="txt gray fit-ref" style="left:156px; top:6057px; font-size:16px;">강력한 세정력으로 주방을 번쩍번쩍!</p>
+<p class="txt brown bold fit-ref kitchen-result-title" style="left:156px; top:6027px; font-size:18px;">기름때, 찌든 때 완벽 제거</p>
+<p class="txt gray fit-ref kitchen-result-desc" style="left:156px; top:6057px; font-size:16px;">강력한 세정력으로 주방을 번쩍번쩍!</p>
 </section>
 <!-- 06. WHY / CLEANING POWER -->
 <section aria-label="세정티슈 특징" class="detail-section why-section">
 <p class="txt black heavy fit-ref" style="left:75px; top:6334px; font-size:98px;">왜?</p>
 <p class="txt orange heavy fit-ref" style="left:71px; top:6463px; font-size:70px;">희희낙낙</p>
 <p class="txt black heavy fit-ref" style="left:70px; top:6547px; font-size:70px;">에탄올 세정티슈일까</p>
-<p class="txt black outlined fit-ref" style="left:77px; top:6680px; font-size:27px;">일상 속 다양한 오염을 간편하고 깨끗하게</p>
+<p class="txt black outlined fit-ref why-outlined-tag" style="left:77px; top:6680px; font-size:27px;">일상 속 다양한 오염을 간편하고 깨끗하게</p>
 <p class="txt black heavy underline-orange fit-ref" style="left:67px; top:6870px; font-size:42px;">강력한 세정력</p>
-<p class="txt gray fit-ref" style="left:65px; top:6959px; font-size:23px;">에탄올 함유로 기름때, 찌든 때, 먼지 등 다양한 오염을</p>
-<p class="txt gray fit-ref" style="left:65px; top:6998px; font-size:23px;">깔끔하게 제거 합니다.</p>
-<p class="txt black bold fit-ref" style="left:141px; top:7190px; height:38px; line-height:38px; font-size:28px;">주방 여기저기 찌든 기름때도 깔끔하게!</p>
-<p class="txt black bold fit-ref" style="left:142px; top:7753px; height:38px; line-height:38px; font-size:28px;">전자레인지, 에어프라이기 기름때도 간단하게!</p>
-<p class="txt black bold fit-ref" style="left:141px; top:8309px; height:38px; line-height:38px; font-size:28px;">욕실의 얼룩진 물때도 말끔하게!</p>
+<p class="txt gray fit-ref why-gray-copy" style="left:65px; top:6959px; font-size:23px;">에탄올 함유로 기름때, 찌든 때, 먼지 등 다양한 오염을</p>
+<p class="txt gray fit-ref why-gray-copy" style="left:65px; top:6998px; font-size:23px;">깔끔하게 제거 합니다.</p>
+<p class="txt black bold fit-ref why-checkline" style="left:141px; top:7190px; height:38px; line-height:38px; font-size:28px;">주방 여기저기 찌든 기름때도 깔끔하게!</p>
+<p class="txt black bold fit-ref why-checkline" style="left:142px; top:7753px; height:38px; line-height:38px; font-size:28px;">전자레인지, 에어프라이기 기름때도 간단하게!</p>
+<p class="txt black bold fit-ref why-checkline" style="left:141px; top:8309px; height:38px; line-height:38px; font-size:28px;">욕실의 얼룩진 물때도 말끔하게!</p>
 </section>
 <!-- 07. MATERIAL -->
 <section aria-label="엠보 원단 소개" class="detail-section material-section">
 <p class="txt black heavy underline-orange fit-ref" style="left:66px; top:8955px; font-size:38px;">도톰한 엠보 원단</p>
-<p class="txt gray fit-ref" style="left:66px; top:9054px; font-size:23px;">도톰하고 탄탄한 엠보 원단이 오염을 효과적으로 흡착하여</p>
-<p class="txt gray fit-ref" style="left:67px; top:9085px; font-size:23px;">간편하고 위생적으로 닦아냅니다.</p>
-<div class="icon-side-copy" style="left:153px; top:9684px; width:120px; height:103px;">
+<p class="txt gray fit-ref material-gray-copy" style="left:66px; top:9054px; font-size:23px;">도톰하고 탄탄한 엠보 원단이 오염을 효과적으로 흡착하여</p>
+<p class="txt gray fit-ref material-gray-copy" style="left:67px; top:9085px; font-size:23px;">간편하고 위생적으로 닦아냅니다.</p>
+<div class="icon-side-copy material-first-copy" style="left:153px; top:9684px; width:120px; height:103px;">
   <p class="side-title">도톰한 원단</p>
   <p class="side-desc">쉽게 찢어지지 않는<br/>탄탄한 두께감!</p>
 </div>
@@ -595,8 +921,8 @@
 <!-- 08. CAP / PORTABLE -->
 <section aria-label="캡형 보관과 휴대성" class="detail-section cap-section">
 <p class="txt heavy fit-ref" style="left:67px; top:9982px; font-size:38px;">캡타입 뚜껑으로 <span class="orange">편리한 보관성</span></p>
-<p class="txt gray fit-ref" style="left:66px; top:10086px; font-size:23px;">캡타입 뚜껑으로 물티슈 수분을 길게 보존하고</p>
-<p class="txt gray fit-ref" style="left:66px; top:10125px; font-size:23px;">뚜껑을 열고 한장 씩 뽑아 쓰기 간편하게</p>
+<p class="txt gray fit-ref cap-gray-copy-fixed" style="left:66px; top:10086px; font-size:23px;">캡타입 뚜껑으로 물티슈 수분을 길게 보존하고</p>
+<p class="txt gray fit-ref cap-gray-copy-fixed" style="left:66px; top:10125px; font-size:23px;">뚜껑을 열고 한장 씩 뽑아 쓰기 간편하게</p>
 <div class="icon-side-copy cap-side-copy" style="left:665px; top:10289px; width:170px; height:103px;">
   <p class="side-title">캡형 뚜껑</p>
   <p class="side-desc">한 손으로 열고 닫기 쉬워<br/>사용이 편리해요.</p>
@@ -615,46 +941,46 @@
 <section aria-label="자연 유래 성분 소개" class="detail-section ingredient-section">
 <p class="txt black heavy fit-ref" style="left:76px; top:11093px; font-size:76px;">안심 성분</p>
 <p class="txt heavy fit-ref" style="left:69px; top:11199px; font-size:70px;"><span class="orange">자연 유래</span> 성분 함유</p>
-<p class="txt black outlined" style="left:78px; top:11328px; font-size:27px;">강력한 세정력, 산뜻한 탈취 효과</p>
+<p class="txt black outlined ingredient-outlined-tag" style="left:78px; top:11328px; font-size:27px;">강력한 세정력, 산뜻한 탈취 효과</p>
 <p class="txt black heavy underline-orange fit-ref" style="left:66px; top:11522px; font-size:42px;">자연유래 성분4가지</p>
-<p class="txt gray fit-ref" style="left:65px; top:11618px; font-size:23px;">에탄올의 강력한 세정력과 자연 유래 식물 추출물의 순한 사용감을 담아</p>
-<p class="txt gray fit-ref" style="left:65px; top:11658px; font-size:23px;">생활 속 오염을 효과적으로 닦아내고, 불쾌한 냄새 제거에 도움을 줍니다.</p>
+<p class="txt gray fit-ref ingredient-gray-copy" style="left:65px; top:11618px; font-size:23px;">에탄올의 강력한 세정력과 자연 유래 식물 추출물의 순한 사용감을 담아</p>
+<p class="txt gray fit-ref ingredient-gray-copy" style="left:65px; top:11658px; font-size:23px;">생활 속 오염을 효과적으로 닦아내고, 불쾌한 냄새 제거에 도움을 줍니다.</p>
 <div class="ingredient-item" style="left:49px; top:11960px; width:150px;">
   <img class="ingredient-badge-img" src="assets/ingredient_badge_1.png" alt=""/>
-  <p class="ing-title">녹차추출물</p>
+  <p class="ing-title ingredient-item-title">녹차추출물</p>
   <p class="ing-desc">세균증식 억제<br/>냄새의 원인 감소<br/>생활악취 완화 도움</p>
 </div>
 <div class="ingredient-item" style="left:225px; top:11960px; width:206px;">
   <img class="ingredient-badge-img" src="assets/ingredient_badge_2.png" alt=""/>
-  <p class="ing-title">편백나무잎 추출물</p>
+  <p class="ing-title ingredient-item-title">편백나무잎 추출물</p>
   <p class="ing-desc">세균 곰팡이 증식 억제<br/>냄새의 원인 감소<br/>숲향으로 불쾌한 냄새 완화</p>
 </div>
 <div class="ingredient-item" style="left:442px; top:11960px; width:180px;">
   <img class="ingredient-badge-img" src="assets/ingredient_badge_3.png" alt=""/>
-  <p class="ing-title">사자발쑥 추출물</p>
+  <p class="ing-title ingredient-item-title">사자발쑥 추출물</p>
   <p class="ing-desc">항균 및 탈취 작용<br/>미생물 증식 억제<br/>생활 악취 완화에 도움</p>
 </div>
 <div class="ingredient-item" style="left:645px; top:11960px; width:180px;">
   <img class="ingredient-badge-img" src="assets/ingredient_badge_4.png" alt=""/>
-  <p class="ing-title">감나무잎 추출물</p>
+  <p class="ing-title ingredient-item-title">감나무잎 추출물</p>
   <p class="ing-desc">항균 및 항산화 작용<br/>미생물 증식 억제<br/>생활 악취 완화 도움</p>
 </div>
-<p class="txt gray" style="left:70px; top:12125px; font-size:12px;">※ 상기 설명은 원료적 특성에 한합니다.</p>
+<p class="txt gray ingredient-note-fixed" style="left:70px; top:12125px; font-size:12px;">※ 상기 설명은 원료적 특성에 한합니다.</p>
 </section>
 <!-- 10. FORMULA / SAFETY -->
 <section aria-label="성분과 안전 설계" class="detail-section formula-section">
 <p class="txt black heavy underline-orange fit-ref" style="left:67px; top:12239px; font-size:39px;">청결관리를 돕는 성분</p>
 <p class="txt gray fit-ref" style="left:66px; top:12334px; font-size:23px;">소중한 피부와 생활 환경을 모두 고려한 성분으로</p>
 <p class="txt gray fit-ref" style="left:67px; top:12373px; font-size:23px;">안전하게 설계된 안심 에탄올 세정티슈 입니다.</p>
-<p class="txt orange heavy fit-ref" style="left:66px; top:12483px; font-size:38px;">#에탄올  #라우릴피리디늄클로라이드</p>
-<p class="txt black heavy fit-ref" style="left:66px; top:12543px; font-size:38px;">#부틸렌글라이콜  #레불리닉애씨드  #유칼립투스</p>
-<p class="txt orange heavy fit-ref" style="left:66px; top:12602px; font-size:38px;">#페퍼민트추출물  #소듐글루네이트</p>
-<p class="txt black heavy fit-ref" style="left:66px; top:12661px; font-size:38px;">#허브복합추출물</p>
-<p class="txt white heavy fit-ref" style="left:75px; top:12975px; font-size:82px;">무첨가</p>
+<p class="txt orange heavy fit-ref formula-tagline" style="left:66px; top:12483px; font-size:38px;">#에탄올  #라우릴피리디늄클로라이드</p>
+<p class="txt black heavy fit-ref formula-tagline" style="left:66px; top:12543px; font-size:38px;">#부틸렌글라이콜  #레불리닉애씨드  #유칼립투스</p>
+<p class="txt orange heavy fit-ref formula-tagline" style="left:66px; top:12602px; font-size:38px;">#페퍼민트추출물  #소듐글루네이트</p>
+<p class="txt black heavy fit-ref formula-tagline" style="left:66px; top:12661px; font-size:38px;">#허브복합추출물</p>
+<p class="txt white heavy fit-ref no-additives-fixed" style="left:75px; top:12975px; font-size:82px;">무첨가</p>
 <p class="txt black heavy fit-ref" style="left:74px; top:13099px; font-size:64px;">클린 안심 성분 설계</p>
-<p class="txt gray" style="left:78px; top:13206px; font-size:25px;">화장품 기준에 맞춘 성분 설계와 품질 관리로 안심하고</p>
-<p class="txt gray" style="left:78px; top:13242px; font-size:25px;">사용할 수 있도록 만들었습니다.</p>
-<p class="txt black heavy outlined center" style="left:228px; top:13712px; width:408px; font-size:38px; padding:8px 10px 9px;">유해 우려 성분 8종 무첨가</p>
+<p class="txt gray formula-gray-copy" style="left:78px; top:13206px; font-size:25px;">화장품 기준에 맞춘 성분 설계와 품질 관리로 안심하고</p>
+<p class="txt gray formula-gray-copy" style="left:78px; top:13242px; font-size:25px;">사용할 수 있도록 만들었습니다.</p>
+<p class="txt black heavy outlined center formula-safe-title" style="left:228px; top:13712px; width:408px; font-size:38px;">유해 우려 성분 8종 무첨가</p>
 <div class="safe-row" style="top:13855px;"><span class="name">가습기살균제성분</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
 <div class="safe-row" style="top:13946px;"><span class="name">포알데히드, 메탄올</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
 <div class="safe-row" style="top:14037px;"><span class="name">아세트알데하이드</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
@@ -662,19 +988,19 @@
 <div class="safe-row" style="top:14219px;"><span class="name">아산화염소, IPBC</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
 <p class="txt black heavy outlined center" style="left:114px; top:14438px; width:629px; font-size:35px; padding:7px 10px 8px;">세정제, 탈취제 안전확인 대상 확인결과서</p>
 <p class="txt label-blue center" style="left:196px; top:14962px; width:468px; font-size:24px;">성분부터 시험까지 꼼꼼하게 검증된 안심 설계</p>
-<p class="txt gray center" style="left:240px; top:15018px; width:380px; font-size:19px;">유해 우려 성분은 배제하고</p>
-<p class="txt gray center" style="left:193px; top:15052px; width:474px; font-size:19px;">외부 시험기관 테스트를 완료한 신뢰할 수 있는 클린 케어</p>
+<p class="txt gray center formula-bottom-copy" style="left:240px; top:15018px; width:380px; font-size:19px;">유해 우려 성분은 배제하고</p>
+<p class="txt gray center formula-bottom-copy" style="left:193px; top:15052px; width:474px; font-size:19px;">외부 시험기관 테스트를 완료한 신뢰할 수 있는 클린 케어</p>
 </section>
 <!-- 11. DOMESTIC PRODUCTION -->
 <section aria-label="국내 생산 공정" class="detail-section production-section">
-<p class="txt black heavy fit-ref" style="left:73px; top:15273px; font-size:82px;">국내생산</p>
-<p class="txt black heavy fit-ref" style="left:78px; top:15386px; font-size:68px;">안심을 위한</p>
-<p class="txt heavy fit-ref" style="left:76px; top:15473px; font-size:68px;">꼼꼼한 <span class="orange">제조 공정</span></p>
+<p class="txt black heavy fit-ref production-title-line" data-production-base-size="82" style="left:73px; top:15273px; font-size:82px;">국내생산</p>
+<p class="txt black heavy fit-ref production-title-line" data-production-base-size="68" style="left:78px; top:15386px; font-size:68px;">안심을 위한</p>
+<p class="txt heavy fit-ref production-title-line" data-production-base-size="68" style="left:76px; top:15473px; font-size:68px;">꼼꼼한 <span class="orange">제조 공정</span></p>
 <p class="txt gray fit-ref" style="left:75px; top:15633px; font-size:24px;">원단 가공부터 생산까지 엄격한 품질 관리 기준을 적용하여</p>
 <p class="txt gray fit-ref" style="left:76px; top:15672px; font-size:24px;">전문 제조 시설에서 안전하게 생산합니다.</p>
 <p class="txt white bold center" style="left:224px; top:16244px; width:412px; font-size:25px; background:#707070; padding:7px 10px 8px;">화장품 기준에 맞춘 체계적인 생산 과정</p>
-<p class="txt gray center" style="left:280px; top:16336px; width:300px; font-size:18px;">축적된 오랜 제조 노하우를 바탕으로</p>
-<p class="txt gray center" style="left:127px; top:16366px; width:610px; font-size:18px;">화장품 기준에 맞춘 성분 설계와 엄격한 품질 관리 과정을 통해 생산됩니다.</p>
+<p class="txt gray center production-bottom-copy" style="left:280px; top:16336px; width:300px; font-size:18px;">축적된 오랜 제조 노하우를 바탕으로</p>
+<p class="txt gray center production-bottom-copy" style="left:127px; top:16366px; width:610px; font-size:18px;">화장품 기준에 맞춘 성분 설계와 엄격한 품질 관리 과정을 통해 생산됩니다.</p>
 </section>
 <!-- 12. LEGAL -->
 <section aria-label="제품 표시사항 및 주의사항" class="detail-section legal-section">
@@ -686,24 +1012,24 @@
 <div class="legal-brand-wrap">
   <img alt="희희낙낙" src="assets/legal_brand_logo.png"/>
 </div>
-<p class="txt legal" style="left:54px; top:17678px; width:642px; font-size:11.8px; white-space:nowrap;"><strong>ㆍ품목 :</strong> 세정제, 탈취제 <strong>ㆍ제품명 :</strong> 잘닦이는 에탄올 세정티슈 <strong>ㆍ용도 :</strong> 세정제 - 일반용(건물 바닥용), 탈취제 - 일반용(물체용)</p>
-<p class="txt legal" style="left:54px; top:17698px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ제형 :</strong> 티슈형 <strong>ㆍ중량·용량·매수 :</strong> 50매 <strong>ㆍ표준사용량 :</strong> 해당없음 <strong>ㆍ제조연월 :</strong> 별도표기</p>
-<p class="txt legal" style="left:54px; top:17718px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ유통기한 :</strong> 제조일로부터 24개월 <strong>ㆍ제조원 :</strong> 맑은미소 | 경기도 파주시 검산로173번길 102</p>
-<p class="txt legal" style="left:54px; top:17738px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ고객지원센터 :</strong> 031-947-5637 <strong>ㆍ사용 물질 주요물질 :</strong> 부직포, 에탄올, 정제수, 탈취(부틸렌글라이콜 등)</p>
-<p class="txt legal" style="left:54px; top:17758px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ사용방법 :</strong> 한 장씩 뽑아 넓게 펴거나 반으로 접어 세정이 필요한 장소나 물건을 고르게 닦아 줍니다.</p>
+<p class="txt legal legal-summary-line" style="left:54px; top:17678px; width:642px; font-size:11.8px; white-space:nowrap;"><strong>ㆍ품목 :</strong> 세정제, 탈취제 <strong>ㆍ제품명 :</strong> 잘닦이는 에탄올 세정티슈 <strong>ㆍ용도 :</strong> 세정제 - 일반용(건물 바닥용), 탈취제 - 일반용(물체용)</p>
+<p class="txt legal legal-summary-line" style="left:54px; top:17698px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ제형 :</strong> 티슈형 <strong>ㆍ중량·용량·매수 :</strong> 50매 <strong>ㆍ표준사용량 :</strong> 해당없음 <strong>ㆍ제조연월 :</strong> 별도표기</p>
+<p class="txt legal legal-summary-line" style="left:54px; top:17718px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ유통기한 :</strong> 제조일로부터 24개월 <strong>ㆍ제조원 :</strong> 맑은미소 | 경기도 파주시 검산로173번길 102</p>
+<p class="txt legal legal-summary-line" style="left:54px; top:17738px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ고객지원센터 :</strong> 031-947-5637 <strong>ㆍ사용 물질 주요물질 :</strong> 부직포, 에탄올, 정제수, 탈취(부틸렌글라이콜 등)</p>
+<p class="txt legal legal-summary-line" style="left:54px; top:17758px; width:642px; font-size:12px; white-space:nowrap;"><strong>ㆍ사용방법 :</strong> 한 장씩 뽑아 넓게 펴거나 반으로 접어 세정이 필요한 장소나 물건을 고르게 닦아 줍니다.</p>
 <p class="txt legal" style="left:53px; top:17840px; font-size:13px;"><strong>[주의사항]</strong></p>
-<p class="txt legal" style="left:120px; top:17840px; font-size:13px;">① 다른 제품과 섞어 사용할 경우 인체에 치명적인 손상을 입힐 수 있으니 섞어 사용하지 마시오.</p>
-<p class="txt legal" style="left:120px; top:17863px; font-size:13px;">② 표시사항에 기재된 제품의 용도 외에는 사용하지 마시오.</p>
-<p class="txt legal" style="left:120px; top:17885px; font-size:13px;">③ 변색, 탈색이 우려될 경우에는 먼저 눈에 띄지 않는 부위를 정해 소량으로 테스트해 이상 유무를 확인 후 사용하시오.</p>
-<p class="txt legal" style="left:120px; top:17908px; font-size:13px;">④ 사람 또는 동물에 직접 사용(분사)하지 마시오.</p>
-<p class="txt legal" style="left:120px; top:17930px; font-size:13px;">⑤ 내용물을 마시거나, 내용물이 눈 또는 피부에 닿을 경우 인체에 심각한 손상을 입힐 수 있으니 주의하시오.</p>
-<p class="txt legal" style="left:120px; top:17952px; font-size:13px;">⑥ 어린이 손에 닿지 않는 곳에 보관하고, 입에 넣거나 삼키지 않도록 주의하십시오.</p>
-<p class="txt legal" style="left:120px; top:17975px; font-size:13px;">⑦ 직사광선이나 고온을 피해 보관하시고, 내용물이 마르지 않도록 스티커나 캡을 꼭 닫아 보관하십시오.</p>
-<p class="txt legal" style="left:120px; top:17997px; font-size:13px;">⑧ 바닥 청소시 물기에 의해 미끄러질 수 있으니 주의하시고, 사용 후 변기에 버리면 막히니 휴지통에 버리십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17840px; font-size:13px;">① 다른 제품과 섞어 사용할 경우 인체에 치명적인 손상을 입힐 수 있으니 섞어 사용하지 마시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17863px; font-size:13px;">② 표시사항에 기재된 제품의 용도 외에는 사용하지 마시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17885px; font-size:13px;">③ 변색, 탈색이 우려될 경우에는 먼저 눈에 띄지 않는 부위를 정해 소량으로 테스트해 이상 유무를 확인 후 사용하시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17908px; font-size:13px;">④ 사람 또는 동물에 직접 사용(분사)하지 마시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17930px; font-size:13px;">⑤ 내용물을 마시거나, 내용물이 눈 또는 피부에 닿을 경우 인체에 심각한 손상을 입힐 수 있으니 주의하시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17952px; font-size:13px;">⑥ 어린이 손에 닿지 않는 곳에 보관하고, 입에 넣거나 삼키지 않도록 주의하십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17975px; font-size:13px;">⑦ 직사광선이나 고온을 피해 보관하시고, 내용물이 마르지 않도록 스티커나 캡을 꼭 닫아 보관하십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:17997px; font-size:13px;">⑧ 바닥 청소시 물기에 의해 미끄러질 수 있으니 주의하시고, 사용 후 변기에 버리면 막히니 휴지통에 버리십시오.</p>
 <p class="txt legal" style="left:53px; top:18043px; font-size:13px;"><strong>[응급처치]</strong></p>
-<p class="txt legal" style="left:120px; top:18043px; font-size:13px;">① 제품에 노출되어 불편함을 느끼거나 피부자극 반응 또는 붉은 반점이 생기면 의사의 도움을 받으십시오.</p>
-<p class="txt legal" style="left:120px; top:18066px; font-size:13px;">② 눈이나 피부에 묻으면 깨끗한 물로 씻고 이상이 있을 경우 의사와 상의하십시오.</p>
-<p class="txt legal" style="left:120px; top:18088px; font-size:13px;">③ 내용물을 먹거나 삼킨 경우 응급 조치를 하고 즉시 의사와 상의하십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:18043px; font-size:13px;">① 제품에 노출되어 불편함을 느끼거나 피부자극 반응 또는 붉은 반점이 생기면 의사의 도움을 받으십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:18066px; font-size:13px;">② 눈이나 피부에 묻으면 깨끗한 물로 씻고 이상이 있을 경우 의사와 상의하십시오.</p>
+<p class="txt legal legal-caution-line" style="left:120px; top:18088px; font-size:13px;">③ 내용물을 먹거나 삼킨 경우 응급 조치를 하고 즉시 의사와 상의하십시오.</p>
 </section>
 </div>
 </div>
@@ -748,12 +1074,419 @@
   const prepare = (el) => {
     if (!el || el.dataset.mlFitReady === '1') return;
 
+    if (el.classList.contains('hero-pill')) {
+      el.setAttribute('dir', 'auto');
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'hidden';
+      return;
+    }
+
     if (el.classList.contains('hero-dynamic-title')) {
       el.setAttribute('dir', 'auto');
       el.style.width = 'auto';
       el.style.height = 'auto';
       el.style.minHeight = '0';
       el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('hero-subcopy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('bathroom-orange-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('bathroom-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('bathroom-label')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = '108px';
+      el.style.maxWidth = '108px';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('bathroom-result-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '18px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('bathroom-result-desc')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '16px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('smartphone-result-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '18px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('smartphone-result-desc')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '16px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('table-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('table-result-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '18px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('table-result-desc')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '16px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('kitchen-orange-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('kitchen-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('kitchen-result-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '18px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('kitchen-result-desc')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '16px';
+      el.style.lineHeight = '1.2';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('why-outlined-tag')) {
+      el.setAttribute('dir', 'auto');
+      return;
+    }
+
+    if (el.classList.contains('why-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('why-checkline')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = '38px';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      el.style.lineHeight = '38px';
+      return;
+    }
+
+    if (el.classList.contains('material-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('feature-desc-fixed-first')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '14px';
+      el.style.lineHeight = '1.1';
+      el.style.width = '150px';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('cap-gray-copy-fixed')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '23px';
+      el.style.lineHeight = '1.15';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('ingredient-outlined-tag')) {
+      el.setAttribute('dir', 'auto');
+      el.style.height = '42px';
+      el.style.minHeight = '42px';
+      el.style.display = 'flex';
+      el.style.alignItems = 'center';
+      el.style.justifyContent = 'center';
+      el.style.textAlign = 'center';
+      el.style.whiteSpace = 'nowrap';
+      return;
+    }
+
+    if (el.classList.contains('ingredient-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('ingredient-note-fixed')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '12px';
+      el.style.lineHeight = '1.15';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('ingredient-main-title-fixed')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '47px';
+      el.style.lineHeight = '1';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('final-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('formula-tagline')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('no-additives-fixed')) {
+      el.setAttribute('dir', 'auto');
+      el.style.fontSize = '82px';
+      el.style.lineHeight = '1';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('formula-gray-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxWidth = 'none';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('formula-bottom-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('production-title-line')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('production-bottom-copy')) {
+      el.setAttribute('dir', 'auto');
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
       el.style.maxHeight = 'none';
       el.style.whiteSpace = 'nowrap';
       el.style.overflow = 'visible';
@@ -869,6 +1602,341 @@
   };
 
 
+
+  const fitHeroPillOneLine = () => {
+    const pill = stage.querySelector('.hero-pill');
+    if (!pill) return;
+
+    const inner = pill.querySelector(':scope > .ml-fit-inner') || pill;
+    const hasHangul = /[가-힣]/.test(pill.textContent || '');
+
+    const baseSize = hasHangul ? 22 : 22;
+    pill.style.fontSize = `${baseSize}px`;
+    pill.style.lineHeight = '1';
+    pill.style.whiteSpace = 'nowrap';
+
+    // 번역 시에도 한 줄을 유지하면서 박스 안에 들어갈 때까지 글자크기만 축소
+    let size = baseSize;
+    const minSize = 12;
+
+    while (size > minSize && pill.scrollWidth > pill.clientWidth) {
+      size -= 0.5;
+      pill.style.fontSize = `${size}px`;
+    }
+  };
+
+
+
+
+
+
+
+  const updateKitchenGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.kitchen-gray-copy')];
+    if (lines.length !== 3) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--kitchen-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 560;
+    let low = 12;
+    let high = 20;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--kitchen-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--kitchen-gray-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateKitchenTitleSizes = () => {
+    const lines = [...stage.querySelectorAll('.kitchen-orange-title')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--kitchen-title-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 560;
+    let low = 18;
+    let high = 40;
+    let best = 18;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--kitchen-title-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--kitchen-title-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateTableGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.table-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--table-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 560;
+    let low = 12;
+    let high = 20;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--table-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--table-gray-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateBathroomGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.bathroom-gray-copy')];
+    if (lines.length !== 3) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--bathroom-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 560;
+    let low = 12;
+    let high = 20;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--bathroom-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--bathroom-gray-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateBathroomLabelSizes = () => {
+    const lines = [...stage.querySelectorAll('.bathroom-label')];
+    if (lines.length !== 3) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--bathroom-label-size');
+        el.style.width = '';
+        el.style.maxWidth = '';
+      });
+      return;
+    }
+
+    lines.forEach((el) => {
+      el.classList.add('is-translated');
+      el.style.width = '108px';
+      el.style.maxWidth = '108px';
+    });
+
+    let low = 8;
+    let high = 16;
+    let best = 8;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--bathroom-label-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= 108);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--bathroom-label-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateBathroomTitleSizes = () => {
+    const lines = [...stage.querySelectorAll('.bathroom-orange-title')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--bathroom-title-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 320;
+    let low = 16;
+    let high = 36;
+    let best = 16;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--bathroom-title-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--bathroom-title-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateHeroSubcopySizes = () => {
+    const lines = [...stage.querySelectorAll('.hero-subcopy')];
+    if (lines.length !== 3) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--hero-subcopy-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 800;
+    let low = 16;
+    let high = 29;
+    let best = 16;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--hero-subcopy-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--hero-subcopy-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
   const updateHeroTranslatedTitles = () => {
     const titles = [...stage.querySelectorAll('.hero-dynamic-title')];
     if (titles.length < 2) return;
@@ -918,6 +1986,419 @@
     });
   };
 
+
+
+
+
+
+
+
+
+
+  const updateFormulaGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.formula-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--formula-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 760;
+    let low = 12;
+    let high = 25;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--formula-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--formula-gray-size', finalSize);
+    });
+  };
+
+  const updateFormulaTaglineSizes = () => {
+    const lines = [...stage.querySelectorAll('.formula-tagline')];
+    if (lines.length !== 4) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--formula-tagline-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 760;
+    let low = 12;
+    let high = 38;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--formula-tagline-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--formula-tagline-size', finalSize);
+    });
+  };
+
+  const updateFinalGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.final-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--final-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 760;
+    let low = 12;
+    let high = 23;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--final-gray-size', ${size}px)
+      })
+      return lines.every((el) => el.scrollWidth <= maxWidth)
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--final-gray-size', finalSize);
+    });
+  };
+
+  const updateIngredientItemTitleSizes = () => {
+    const titles = [...stage.querySelectorAll('.ingredient-item-title')];
+    if (titles.length !== 4) return;
+
+    const hasHangul = titles.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      titles.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--ingredient-item-title-size');
+      });
+      return;
+    }
+
+    titles.forEach((el) => el.classList.add('is-translated'));
+
+    const widths = titles.map((el) => {
+      const item = el.closest('.ingredient-item');
+      return item ? item.clientWidth - 8 : 140;
+    });
+
+    let low = 10;
+    let high = 18;
+    let best = 10;
+
+    const fitsAt = (size) => {
+      titles.forEach((el) => {
+        el.style.setProperty('--ingredient-item-title-size', `${size}px`);
+      });
+
+      return titles.every((el, i) => {
+        return el.scrollWidth <= widths[i] + 1 && el.scrollHeight <= 40;
+      });
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    titles.forEach((el) => {
+      el.style.setProperty('--ingredient-item-title-size', finalSize);
+    });
+  };
+
+  const updateIngredientGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.ingredient-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--ingredient-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 730;
+    let low = 12;
+    let high = 23;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--ingredient-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--ingredient-gray-size', finalSize);
+    });
+  };
+
+  const updateMaterialGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.material-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--material-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 730;
+    let low = 12;
+    let high = 23;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--material-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--material-gray-size', finalSize);
+    });
+  };
+
+  const updateWhyChecklistSizes = () => {
+    const lines = [...stage.querySelectorAll('.why-checkline')];
+    if (lines.length !== 3) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--why-checkline-size');
+        el.style.height = '38px';
+        el.style.lineHeight = '38px';
+      });
+      return;
+    }
+
+    lines.forEach((el) => {
+      el.classList.add('is-translated');
+      el.style.height = '38px';
+      el.style.lineHeight = '38px';
+    });
+
+    const maxWidth = 700;
+    let low = 12;
+    let high = 28;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--why-checkline-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--why-checkline-size', finalSize);
+      el.style.height = '38px';
+      el.style.lineHeight = '38px';
+    });
+  };
+
+  const updateWhyGrayCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.why-gray-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--why-gray-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const maxWidth = 730;
+    let low = 12;
+    let high = 23;
+    let best = 12;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--why-gray-size', `${size}px`);
+      });
+      return lines.every((el) => el.scrollWidth <= maxWidth);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    lines.forEach((el) => {
+      el.style.setProperty('--why-gray-size', `${Math.floor(best * 10) / 10}px`);
+    });
+  };
+
+  const updateWhyOutlinedTag = () => {
+    const el = stage.querySelector('.why-outlined-tag');
+    if (!el) return;
+
+    const hasHangul = /[가-힣]/.test(el.textContent || '');
+
+    if (hasHangul) {
+      el.classList.add('is-korean');
+      el.style.fontSize = '27px';
+      el.style.lineHeight = '1';
+      el.style.width = 'max-content';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.maxHeight = 'none';
+      el.style.minWidth = '0';
+      el.style.minHeight = '0';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+    } else {
+      el.classList.remove('is-korean');
+      el.style.width = 'max-content';
+      el.style.maxWidth = '700px';
+      el.style.height = 'auto';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'normal';
+      el.style.overflow = 'visible';
+    }
+  };
+
+
+  const updateMaterialFirstCopySpacing = () => {
+    const group = stage.querySelector('.material-first-copy');
+    if (!group) return;
+
+    const hasHangul = /[가-힣]/.test(group.textContent || '');
+    group.classList.toggle('is-translated', !hasHangul);
+  };
+
   const updateFeatureTitleMinHeight = () => {
     stage.querySelectorAll('.feature-group .feature-title').forEach((el) => {
       const hasHangul = /[가-힣]/.test(el.textContent || '');
@@ -927,11 +2408,293 @@
     });
   };
 
+
+
+
+
+  const updateProductionBottomCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.production-bottom-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--production-bottom-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const widths = lines.map((el) => parseFloat(getComputedStyle(el).width) || el.clientWidth);
+    let low = 9;
+    let high = 18;
+    let best = 9;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--production-bottom-size', `${size}px`);
+      });
+      return lines.every((el, i) => el.scrollWidth <= widths[i] + 1);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--production-bottom-size', finalSize);
+    });
+  };
+
+  const updateProductionTitleLines = () => {
+    const titles = [...stage.querySelectorAll('.production-title-line')];
+    if (titles.length !== 3) return;
+
+    const maxRight = 820;
+
+    titles.forEach((el) => {
+      const baseSize = parseFloat(el.dataset.productionBaseSize || getComputedStyle(el).fontSize) || 68;
+      const hasHangul = /[가-힣]/.test(el.textContent || '');
+
+      el.style.whiteSpace = 'nowrap';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.maxHeight = 'none';
+      el.style.overflow = 'visible';
+
+      if (hasHangul) {
+        el.style.fontSize = `${baseSize}px`;
+        el.style.lineHeight = '1';
+        return;
+      }
+
+      const left = parseFloat(el.style.left) || 0;
+      const availableWidth = Math.max(120, maxRight - left);
+
+      let low = 20;
+      let high = baseSize;
+      let best = low;
+
+      const fitsAt = (size) => {
+        el.style.fontSize = `${size}px`;
+        el.style.lineHeight = '1';
+        return el.scrollWidth <= availableWidth;
+      };
+
+      for (let i = 0; i < 16; i += 1) {
+        const mid = (low + high) / 2;
+        if (fitsAt(mid)) {
+          best = mid;
+          low = mid;
+        } else {
+          high = mid;
+        }
+      }
+
+      el.style.fontSize = `${Math.floor(best * 10) / 10}px`;
+      el.style.lineHeight = '1';
+    });
+  };
+
+  const updateFormulaBottomCopySizes = () => {
+    const lines = [...stage.querySelectorAll('.formula-bottom-copy')];
+    if (lines.length !== 2) return;
+
+    const hasHangul = lines.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    if (hasHangul) {
+      lines.forEach((el) => {
+        el.classList.remove('is-translated');
+        el.style.removeProperty('--formula-bottom-size');
+      });
+      return;
+    }
+
+    lines.forEach((el) => el.classList.add('is-translated'));
+
+    const widths = lines.map((el) => parseFloat(getComputedStyle(el).width) || el.clientWidth);
+    let low = 10;
+    let high = 19;
+    let best = 10;
+
+    const fitsAt = (size) => {
+      lines.forEach((el) => {
+        el.style.setProperty('--formula-bottom-size', `${size}px`);
+      });
+      return lines.every((el, i) => el.scrollWidth <= widths[i] + 1);
+    };
+
+    for (let i = 0; i < 16; i += 1) {
+      const mid = (low + high) / 2;
+      if (fitsAt(mid)) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+
+    const finalSize = `${Math.floor(best * 10) / 10}px`;
+    lines.forEach((el) => {
+      el.style.setProperty('--formula-bottom-size', finalSize);
+    });
+  };
+
+
+
+  const equalizeLegalCautionLineSizes = () => {
+    const lines = [...stage.querySelectorAll('.legal-caution-line')];
+    if (!lines.length) return;
+
+    const currentSizes = lines
+      .map((el) => parseFloat(getComputedStyle(el).fontSize))
+      .filter((size) => Number.isFinite(size) && size > 0);
+
+    if (!currentSizes.length) return;
+
+    const minSize = Math.min(...currentSizes);
+
+    lines.forEach((el) => {
+      const inner = el.querySelector(':scope > .ml-fit-inner');
+      if (inner) {
+        inner.style.transform = 'none';
+        inner.style.width = '100%';
+      }
+      el.style.fontSize = `${minSize}px`;
+      el.style.lineHeight = '1.5';
+      el.style.whiteSpace = 'nowrap';
+    });
+  };
+
+  const equalizeLegalSummaryLineSizes = () => {
+    const lines = [...stage.querySelectorAll('.legal-summary-line')];
+    if (lines.length !== 5) return;
+
+    // 개별 자동맞춤 후 적용된 크기 중 가장 작은 값부터 시작
+    const currentSizes = lines
+      .map((el) => parseFloat(getComputedStyle(el).fontSize))
+      .filter((size) => Number.isFinite(size) && size > 0);
+
+    if (!currentSizes.length) return;
+
+    const maxStart = Math.min(...currentSizes);
+
+    const resetInnerScale = () => {
+      lines.forEach((el) => {
+        const inner = el.querySelector(':scope > .ml-fit-inner');
+        if (inner) {
+          inner.style.transform = 'none';
+          inner.style.width = '100%';
+        }
+      });
+    };
+
+    const fitsAt = (size) => {
+      resetInnerScale();
+
+      lines.forEach((el) => {
+        el.style.fontSize = `${size}px`;
+        el.style.lineHeight = '1.55';
+        el.style.whiteSpace = 'nowrap';
+      });
+
+      return lines.every((el) =>
+        el.scrollWidth <= el.clientWidth + 1 &&
+        el.scrollHeight <= el.clientHeight + 1
+      );
+    };
+
+    let low = 5;
+    let high = maxStart;
+    let best = low;
+
+    if (fitsAt(maxStart)) {
+      best = maxStart;
+    } else {
+      for (let i = 0; i < 16; i += 1) {
+        const mid = (low + high) / 2;
+        if (fitsAt(mid)) {
+          best = mid;
+          low = mid;
+        } else {
+          high = mid;
+        }
+      }
+    }
+
+    const finalSize = Math.floor(best * 10) / 10;
+
+    resetInnerScale();
+    lines.forEach((el) => {
+      el.style.fontSize = `${finalSize}px`;
+      el.style.lineHeight = '1.55';
+      el.style.whiteSpace = 'nowrap';
+    });
+  };
+
+  const equalizeSafeRowNameSizes = () => {
+    const names = [...stage.querySelectorAll('.safe-row .name')];
+    if (!names.length) return;
+
+    const hasHangul = names.some((el) => /[가-힣]/.test(el.textContent || ''));
+
+    // 한글 원본에서는 기존 크기 유지
+    if (hasHangul) return;
+
+    const sizes = names
+      .map((el) => parseFloat(getComputedStyle(el).fontSize))
+      .filter((size) => Number.isFinite(size) && size > 0);
+
+    if (!sizes.length) return;
+
+    const minSize = Math.min(...sizes);
+
+    names.forEach((el) => {
+      el.style.fontSize = `${minSize}px`;
+      el.style.lineHeight = '1.15';
+    });
+  };
+
   const fitAll = () => {
     raf = 0;
+    fitHeroPillOneLine();
     updateHeroTranslatedTitles();
+    updateHeroSubcopySizes();
+    updateBathroomTitleSizes();
+    updateBathroomGrayCopySizes();
+    updateBathroomLabelSizes();
+    updateTableGrayCopySizes();
+    updateKitchenTitleSizes();
+    updateKitchenGrayCopySizes();
+    updateWhyGrayCopySizes();
+    updateWhyChecklistSizes();
+    updateMaterialGrayCopySizes();
+    updateIngredientGrayCopySizes();
+    updateIngredientItemTitleSizes();
+    updateFinalGrayCopySizes();
+    updateFormulaTaglineSizes();
+    updateFormulaGrayCopySizes();
+    updateMaterialFirstCopySpacing();
+    updateWhyOutlinedTag();
     updateFeatureTitleMinHeight();
     fitted.forEach(fitOne);
+    updateFormulaBottomCopySizes();
+    updateProductionTitleLines();
+    updateProductionBottomCopySizes();
+    equalizeLegalSummaryLineSizes();
+    equalizeLegalCautionLineSizes();
+    equalizeSafeRowNameSizes();
   };
 
   const requestFit = () => {
