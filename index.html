@@ -136,6 +136,17 @@
       text-align: center;
     }
 
+    .feature-group .feature-title-fixed-first {
+      width: 120px !important;
+      max-width: none !important;
+      white-space: nowrap !important;
+      overflow: visible !important;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
     .feature-group .feature-copy.ml-fit-box {
       height: auto !important;
       min-height: 0 !important;
@@ -282,8 +293,8 @@
     }
 
     .hero-section .hero-dynamic-title.is-translated {
-      font-size: var(--hero-translated-size, 56px) !important;
-      line-height: 1.05 !important;
+      font-size: var(--hero-translated-size, 52px) !important;
+      line-height: 1.03 !important;
     }
 
     .hero-section .hero-subcopy.is-translated {
@@ -302,9 +313,9 @@
     }
 
     .bathroom-section .bathroom-label.is-translated {
-      width: 108px !important;
-      max-width: 108px !important;
-      font-size: var(--bathroom-label-size, 16px) !important;
+      width: 92px !important;
+      max-width: 92px !important;
+      font-size: var(--bathroom-label-size, 12px) !important;
       line-height: 1.1 !important;
       white-space: nowrap !important;
       text-align: center !important;
@@ -384,6 +395,36 @@
     .kitchen-section .kitchen-orange-title.is-translated {
       font-size: var(--kitchen-title-size, 40px) !important;
       line-height: 1.05 !important;
+    }
+
+    .kitchen-section .kitchen-main-heading {
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+      line-height: 1 !important;
+    }
+
+    .kitchen-section .kitchen-main-heading.is-translated {
+      font-size: 34px !important;
+    }
+
+    .why-section .why-main-title {
+      white-space: nowrap !important;
+      width: auto !important;
+      max-width: none !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+      line-height: 1 !important;
+    }
+
+    .why-section .why-main-title.is-translated {
+      font-size: 50px !important;
     }
 
     .kitchen-section .kitchen-gray-copy.is-translated {
@@ -724,6 +765,21 @@
       max-width: none;
     }
 
+    .portable-lead,
+    .portable-main-title,
+    .portable-gray-copy,
+    .ingredient-main-title,
+    .ingredient-sub-title,
+    .formula-top-title,
+    .formula-top-copy,
+    .formula-clean-title,
+    .formula-report-title,
+    .formula-verification-copy,
+    .production-intro-copy,
+    .production-process-title {
+      overflow: visible !important;
+    }
+
     .legal {
       font-size: 13px;
       line-height: 1.55;
@@ -823,7 +879,7 @@
 <span class="feature-separator" style="left:557px;"></span>
 
 <div class="feature-group" style="left:239.5px; top:1281px;">
-<p class="txt feature-copy feature-title">에탄올 함유</p>
+<p class="txt feature-copy feature-title feature-title-fixed-first">에탄올 함유</p>
 <p class="txt feature-copy feature-desc feature-desc-fixed-first">강력한 세정력</p>
 </div>
 <div class="feature-group" style="left:372px; top:1281px;">
@@ -876,7 +932,7 @@
 <section aria-label="주방 사용 예시" class="detail-section kitchen-section">
 <img alt="04" class="graphic" src="assets/kitchen_badge04.png" style="left:82px; top:5060px; width:82px; height:80px;"/>
 <img alt="렌지후드 및 인덕션 가스렌지 아이콘" class="graphic" src="assets/kitchen_icons.png" style="left:82px; top:5465px; width:248px; height:100px;"/>
-<p class="txt black heavy fit-ref" style="left:93px; top:5145px; font-size:48px;">인덕션 / 가스렌지 / 렌지후드</p>
+<p class="txt black heavy fit-ref kitchen-main-heading" style="left:93px; top:5145px; font-size:48px;">인덕션 / 가스렌지 / 렌지후드</p>
 <p class="txt orange heavy fit-ref kitchen-orange-title" style="left:95px; top:5213px; font-size:40px;">기름때와 찌든 때를</p>
 <p class="txt orange heavy fit-ref kitchen-orange-title" style="left:94px; top:5263px; font-size:40px;">말끔하게</p>
 <p class="txt gray fit-ref kitchen-gray-copy" style="left:93px; top:5331px; font-size:20px;">기름때가 많은 렌지후드와</p>
@@ -890,8 +946,8 @@
 <!-- 06. WHY / CLEANING POWER -->
 <section aria-label="세정티슈 특징" class="detail-section why-section">
 <p class="txt black heavy fit-ref" style="left:75px; top:6334px; font-size:98px;">왜?</p>
-<p class="txt orange heavy fit-ref" style="left:71px; top:6463px; font-size:70px;">희희낙낙</p>
-<p class="txt black heavy fit-ref" style="left:70px; top:6547px; font-size:70px;">에탄올 세정티슈일까</p>
+<p class="txt orange heavy fit-ref why-main-title" data-why-base-size="70" style="left:71px; top:6463px; font-size:70px;">희희낙낙</p>
+<p class="txt black heavy fit-ref why-main-title" data-why-base-size="70" style="left:70px; top:6547px; font-size:70px;">에탄올 세정티슈일까</p>
 <p class="txt black outlined fit-ref why-outlined-tag" style="left:77px; top:6680px; font-size:27px;">일상 속 다양한 오염을 간편하고 깨끗하게</p>
 <p class="txt black heavy underline-orange fit-ref" style="left:67px; top:6870px; font-size:42px;">강력한 세정력</p>
 <p class="txt gray fit-ref why-gray-copy" style="left:65px; top:6959px; font-size:23px;">에탄올 함유로 기름때, 찌든 때, 먼지 등 다양한 오염을</p>
@@ -931,16 +987,16 @@
   <p class="side-title">한장씩 쏙!</p>
   <p class="side-desc">엠보 원단이 한장씩<br/>깔끔하게 잘 뽑혀요.</p>
 </div>
-<p class="txt black bold fit-ref" style="left:64px; top:10669px; font-size:28px;">언제 어디서나 가볍게!</p>
-<p class="txt heavy fit-ref" style="left:64px; top:10711px; font-size:46px;"><span class="orange">간편한</span> 휴대성</p>
-<p class="txt gray" style="left:65px; top:10790px; font-size:23px;">가정에서도 외출시에도</p>
-<p class="txt gray" style="left:65px; top:10822px; font-size:23px;">언제 어디서나 간편하게</p>
-<p class="txt gray" style="left:65px; top:10854px; font-size:23px;">휴대해서 사용할 수 있어요.</p>
+<p class="txt black bold fit-ref portable-lead" style="left:64px; top:10669px; font-size:28px;">언제 어디서나 가볍게!</p>
+<p class="txt heavy fit-ref portable-main-title" style="left:64px; top:10711px; font-size:46px;"><span class="orange">간편한</span> 휴대성</p>
+<p class="txt gray portable-gray-copy" style="left:65px; top:10790px; font-size:23px;">가정에서도 외출시에도</p>
+<p class="txt gray portable-gray-copy" style="left:65px; top:10822px; font-size:23px;">언제 어디서나 간편하게</p>
+<p class="txt gray portable-gray-copy" style="left:65px; top:10854px; font-size:23px;">휴대해서 사용할 수 있어요.</p>
 </section>
 <!-- 09. NATURAL INGREDIENT -->
 <section aria-label="자연 유래 성분 소개" class="detail-section ingredient-section">
-<p class="txt black heavy fit-ref" style="left:76px; top:11093px; font-size:76px;">안심 성분</p>
-<p class="txt heavy fit-ref" style="left:69px; top:11199px; font-size:70px;"><span class="orange">자연 유래</span> 성분 함유</p>
+<p class="txt black heavy fit-ref ingredient-main-title" style="left:76px; top:11093px; font-size:76px;">안심 성분</p>
+<p class="txt heavy fit-ref ingredient-sub-title" style="left:69px; top:11199px; font-size:70px;"><span class="orange">자연 유래</span> 성분 함유</p>
 <p class="txt black outlined ingredient-outlined-tag" style="left:78px; top:11328px; font-size:27px;">강력한 세정력, 산뜻한 탈취 효과</p>
 <p class="txt black heavy underline-orange fit-ref" style="left:66px; top:11522px; font-size:42px;">자연유래 성분4가지</p>
 <p class="txt gray fit-ref ingredient-gray-copy" style="left:65px; top:11618px; font-size:23px;">에탄올의 강력한 세정력과 자연 유래 식물 추출물의 순한 사용감을 담아</p>
@@ -969,15 +1025,15 @@
 </section>
 <!-- 10. FORMULA / SAFETY -->
 <section aria-label="성분과 안전 설계" class="detail-section formula-section">
-<p class="txt black heavy underline-orange fit-ref" style="left:67px; top:12239px; font-size:39px;">청결관리를 돕는 성분</p>
-<p class="txt gray fit-ref" style="left:66px; top:12334px; font-size:23px;">소중한 피부와 생활 환경을 모두 고려한 성분으로</p>
-<p class="txt gray fit-ref" style="left:67px; top:12373px; font-size:23px;">안전하게 설계된 안심 에탄올 세정티슈 입니다.</p>
+<p class="txt black heavy underline-orange fit-ref formula-top-title" style="left:67px; top:12239px; font-size:39px;">청결관리를 돕는 성분</p>
+<p class="txt gray fit-ref formula-top-copy" style="left:66px; top:12334px; font-size:23px;">소중한 피부와 생활 환경을 모두 고려한 성분으로</p>
+<p class="txt gray fit-ref formula-top-copy" style="left:67px; top:12373px; font-size:23px;">안전하게 설계된 안심 에탄올 세정티슈 입니다.</p>
 <p class="txt orange heavy fit-ref formula-tagline" style="left:66px; top:12483px; font-size:38px;">#에탄올  #라우릴피리디늄클로라이드</p>
 <p class="txt black heavy fit-ref formula-tagline" style="left:66px; top:12543px; font-size:38px;">#부틸렌글라이콜  #레불리닉애씨드  #유칼립투스</p>
 <p class="txt orange heavy fit-ref formula-tagline" style="left:66px; top:12602px; font-size:38px;">#페퍼민트추출물  #소듐글루네이트</p>
 <p class="txt black heavy fit-ref formula-tagline" style="left:66px; top:12661px; font-size:38px;">#허브복합추출물</p>
 <p class="txt white heavy fit-ref no-additives-fixed" style="left:75px; top:12975px; font-size:82px;">무첨가</p>
-<p class="txt black heavy fit-ref" style="left:74px; top:13099px; font-size:64px;">클린 안심 성분 설계</p>
+<p class="txt black heavy fit-ref formula-clean-title" style="left:74px; top:13099px; font-size:64px;">클린 안심 성분 설계</p>
 <p class="txt gray formula-gray-copy" style="left:78px; top:13206px; font-size:25px;">화장품 기준에 맞춘 성분 설계와 품질 관리로 안심하고</p>
 <p class="txt gray formula-gray-copy" style="left:78px; top:13242px; font-size:25px;">사용할 수 있도록 만들었습니다.</p>
 <p class="txt black heavy outlined center formula-safe-title" style="left:228px; top:13712px; width:408px; font-size:38px;">유해 우려 성분 8종 무첨가</p>
@@ -986,8 +1042,8 @@
 <div class="safe-row" style="top:14037px;"><span class="name">아세트알데하이드</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
 <div class="safe-row" style="top:14128px;"><span class="name">클로로포름, 글리옥살</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
 <div class="safe-row" style="top:14219px;"><span class="name">아산화염소, IPBC</span><span class="check"></span><span class="value"><strong>유해성분</strong><b>0%</b></span></div>
-<p class="txt black heavy outlined center" style="left:114px; top:14438px; width:629px; font-size:35px; padding:7px 10px 8px;">세정제, 탈취제 안전확인 대상 확인결과서</p>
-<p class="txt label-blue center" style="left:196px; top:14962px; width:468px; font-size:24px;">성분부터 시험까지 꼼꼼하게 검증된 안심 설계</p>
+<p class="txt black heavy outlined center formula-report-title" style="left:114px; top:14438px; width:629px; font-size:35px; padding:7px 10px 8px;">세정제, 탈취제 안전확인 대상 확인결과서</p>
+<p class="txt label-blue center formula-verification-copy" style="left:196px; top:14962px; width:468px; font-size:24px;">성분부터 시험까지 꼼꼼하게 검증된 안심 설계</p>
 <p class="txt gray center formula-bottom-copy" style="left:240px; top:15018px; width:380px; font-size:19px;">유해 우려 성분은 배제하고</p>
 <p class="txt gray center formula-bottom-copy" style="left:193px; top:15052px; width:474px; font-size:19px;">외부 시험기관 테스트를 완료한 신뢰할 수 있는 클린 케어</p>
 </section>
@@ -996,9 +1052,9 @@
 <p class="txt black heavy fit-ref production-title-line" data-production-base-size="82" style="left:73px; top:15273px; font-size:82px;">국내생산</p>
 <p class="txt black heavy fit-ref production-title-line" data-production-base-size="68" style="left:78px; top:15386px; font-size:68px;">안심을 위한</p>
 <p class="txt heavy fit-ref production-title-line" data-production-base-size="68" style="left:76px; top:15473px; font-size:68px;">꼼꼼한 <span class="orange">제조 공정</span></p>
-<p class="txt gray fit-ref" style="left:75px; top:15633px; font-size:24px;">원단 가공부터 생산까지 엄격한 품질 관리 기준을 적용하여</p>
-<p class="txt gray fit-ref" style="left:76px; top:15672px; font-size:24px;">전문 제조 시설에서 안전하게 생산합니다.</p>
-<p class="txt white bold center" style="left:224px; top:16244px; width:412px; font-size:25px; background:#707070; padding:7px 10px 8px;">화장품 기준에 맞춘 체계적인 생산 과정</p>
+<p class="txt gray fit-ref production-intro-copy" style="left:75px; top:15633px; font-size:24px;">원단 가공부터 생산까지 엄격한 품질 관리 기준을 적용하여</p>
+<p class="txt gray fit-ref production-intro-copy" style="left:76px; top:15672px; font-size:24px;">전문 제조 시설에서 안전하게 생산합니다.</p>
+<p class="txt white bold center production-process-title" style="left:224px; top:16244px; width:412px; font-size:25px; background:#707070; padding:7px 10px 8px;">화장품 기준에 맞춘 체계적인 생산 과정</p>
 <p class="txt gray center production-bottom-copy" style="left:280px; top:16336px; width:300px; font-size:18px;">축적된 오랜 제조 노하우를 바탕으로</p>
 <p class="txt gray center production-bottom-copy" style="left:127px; top:16366px; width:610px; font-size:18px;">화장품 기준에 맞춘 성분 설계와 엄격한 품질 관리 과정을 통해 생산됩니다.</p>
 </section>
@@ -1131,8 +1187,8 @@
 
     if (el.classList.contains('bathroom-label')) {
       el.setAttribute('dir', 'auto');
-      el.style.width = '108px';
-      el.style.maxWidth = '108px';
+      el.style.width = '92px';
+      el.style.maxWidth = '92px';
       el.style.height = 'auto';
       el.style.minHeight = '0';
       el.style.maxHeight = 'none';
@@ -1249,6 +1305,30 @@
       return;
     }
 
+    if (el.classList.contains('kitchen-main-heading')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (el.classList.contains('why-main-title')) {
+      el.setAttribute('dir', 'auto');
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
     if (el.classList.contains('kitchen-gray-copy')) {
       el.setAttribute('dir', 'auto');
       el.style.width = 'auto';
@@ -1349,6 +1429,31 @@
       el.setAttribute('dir', 'auto');
       el.style.fontSize = '23px';
       el.style.lineHeight = '1.15';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'nowrap';
+      el.style.overflow = 'visible';
+      return;
+    }
+
+    if (
+      el.classList.contains('portable-lead') ||
+      el.classList.contains('portable-main-title') ||
+      el.classList.contains('portable-gray-copy') ||
+      el.classList.contains('ingredient-main-title') ||
+      el.classList.contains('ingredient-sub-title') ||
+      el.classList.contains('formula-top-title') ||
+      el.classList.contains('formula-top-copy') ||
+      el.classList.contains('formula-clean-title') ||
+      el.classList.contains('formula-report-title') ||
+      el.classList.contains('formula-verification-copy') ||
+      el.classList.contains('production-intro-copy') ||
+      el.classList.contains('production-process-title')
+    ) {
+      el.setAttribute('dir', 'auto');
       el.style.width = 'auto';
       el.style.maxWidth = 'none';
       el.style.height = 'auto';
@@ -1674,6 +1779,56 @@
     });
   };
 
+
+  const updateWhyMainTitles = () => {
+    const titles = [...stage.querySelectorAll('.why-main-title')];
+    if (titles.length !== 2) return;
+
+    titles.forEach((el) => {
+      const hasHangul = /[가-힣]/.test(el.textContent || '');
+      const baseSize = parseFloat(el.dataset.whyBaseSize || '70') || 70;
+
+      if (hasHangul) {
+        el.classList.remove('is-translated');
+        el.style.fontSize = `${baseSize}px`;
+      } else {
+        el.classList.add('is-translated');
+        el.style.fontSize = '50px';
+      }
+
+      el.style.lineHeight = '1';
+      el.style.whiteSpace = 'nowrap';
+      el.style.width = 'auto';
+      el.style.maxWidth = 'none';
+      el.style.height = 'auto';
+      el.style.maxHeight = 'none';
+      el.style.overflow = 'visible';
+    });
+  };
+
+  const updateKitchenMainHeading = () => {
+    const el = stage.querySelector('.kitchen-main-heading');
+    if (!el) return;
+
+    const hasHangul = /[가-힣]/.test(el.textContent || '');
+
+    if (hasHangul) {
+      el.classList.remove('is-translated');
+      el.style.fontSize = '48px';
+    } else {
+      el.classList.add('is-translated');
+      el.style.fontSize = '34px';
+    }
+
+    el.style.lineHeight = '1';
+    el.style.whiteSpace = 'nowrap';
+    el.style.width = 'auto';
+    el.style.maxWidth = 'none';
+    el.style.height = 'auto';
+    el.style.maxHeight = 'none';
+    el.style.overflow = 'visible';
+  };
+
   const updateKitchenTitleSizes = () => {
     const lines = [...stage.querySelectorAll('.kitchen-orange-title')];
     if (lines.length !== 2) return;
@@ -1821,19 +1976,19 @@
 
     lines.forEach((el) => {
       el.classList.add('is-translated');
-      el.style.width = '108px';
-      el.style.maxWidth = '108px';
+      el.style.width = '92px';
+      el.style.maxWidth = '92px';
     });
 
     let low = 8;
-    let high = 16;
+    let high = 12;
     let best = 8;
 
     const fitsAt = (size) => {
       lines.forEach((el) => {
         el.style.setProperty('--bathroom-label-size', `${size}px`);
       });
-      return lines.every((el) => el.scrollWidth <= 108);
+      return lines.every((el) => el.scrollWidth <= 92);
     };
 
     for (let i = 0; i < 16; i += 1) {
@@ -1952,23 +2107,21 @@
       return;
     }
 
-    // 번역된 경우 위/아래 제목을 완전히 같은 글자 크기로 맞춤
+    // 번역된 경우 위/아래 제목을 완전히 같은 글자 크기로 맞추고,
+    // 기존보다 한 단계 보수적으로 줄여서 잘리지 않게 처리
     titles.forEach((el) => el.classList.add('is-translated'));
 
-    const maxWidth = 820; // 860px 디자인 안에서 좌우 안전 여백 확보
-    let low = 28;
-    let high = 84;
-    let best = 28;
+    const maxWidth = 770;
+    let low = 24;
+    let high = 72;
+    let best = 24;
 
     const fitsAt = (size) => {
       titles.forEach((el) => {
         el.style.setProperty('--hero-translated-size', `${size}px`);
       });
 
-      return titles.every((el) => {
-        // transform: translateX(-50%)는 폭 계산에 영향이 없으므로 scrollWidth 기준
-        return el.scrollWidth <= maxWidth;
-      });
+      return titles.every((el) => el.scrollWidth <= maxWidth);
     };
 
     for (let i = 0; i < 16; i += 1) {
@@ -2666,6 +2819,113 @@
     });
   };
 
+
+  const hasHangulText = (value) => /[가-힣]/.test(value || '');
+
+  const capTranslatedGroup = (selector, cap, options = {}) => {
+    const els = [...stage.querySelectorAll(selector)];
+    if (!els.length) return;
+    if (els.some((el) => hasHangulText(el.textContent || ''))) return;
+
+    const sizes = els
+      .map((el) => parseFloat(getComputedStyle(el).fontSize))
+      .filter((size) => Number.isFinite(size) && size > 0);
+
+    const finalSize = Math.min(sizes.length ? Math.min(...sizes) : cap, cap);
+
+    els.forEach((el) => {
+      el.style.fontSize = `${finalSize}px`;
+      if (options.lineHeight) el.style.lineHeight = options.lineHeight;
+      if (options.nowrap !== false) el.style.whiteSpace = 'nowrap';
+      if (options.widthAuto) {
+        el.style.width = 'auto';
+        el.style.maxWidth = 'none';
+      }
+      if (options.heightAuto) {
+        el.style.height = 'auto';
+        el.style.minHeight = '0';
+        el.style.maxHeight = 'none';
+      }
+      if (options.center) {
+        el.style.display = 'flex';
+        el.style.alignItems = 'center';
+        el.style.justifyContent = 'center';
+        el.style.textAlign = 'center';
+      }
+    });
+  };
+
+  const shrinkTranslatedEach = (selector, factor, cap = null, options = {}) => {
+    const els = [...stage.querySelectorAll(selector)];
+    if (!els.length) return;
+
+    els.forEach((el) => {
+      if (hasHangulText(el.textContent || '')) return;
+      const current = parseFloat(getComputedStyle(el).fontSize);
+      if (!Number.isFinite(current) || current <= 0) return;
+      let next = current * factor;
+      if (cap !== null) next = Math.min(next, cap);
+      el.style.fontSize = `${Math.floor(next * 10) / 10}px`;
+      if (options.lineHeight) el.style.lineHeight = options.lineHeight;
+      if (options.nowrap !== false) el.style.whiteSpace = 'nowrap';
+      if (options.widthAuto) {
+        el.style.width = 'auto';
+        el.style.maxWidth = 'none';
+      }
+      if (options.heightAuto) {
+        el.style.height = 'auto';
+        el.style.minHeight = '0';
+        el.style.maxHeight = 'none';
+      }
+      if (options.center) {
+        el.style.display = 'flex';
+        el.style.alignItems = 'center';
+        el.style.justifyContent = 'center';
+        el.style.textAlign = 'center';
+      }
+    });
+  };
+
+  const applyRequestedEnglishDownsize = () => {
+    capTranslatedGroup('.hero-subcopy', 24.5, { lineHeight: '1.15', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.why-gray-copy', 20, { lineHeight: '1.1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.why-checkline', 24, { lineHeight: '38px', widthAuto: true, heightAuto: true });
+
+    shrinkTranslatedEach('.portable-lead', 0.88, 24, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.portable-main-title', 0.85, 38, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.portable-gray-copy', 19, { lineHeight: '1.15', widthAuto: true, heightAuto: true });
+
+    shrinkTranslatedEach('.ingredient-main-title', 0.82, 62, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.ingredient-sub-title', 0.82, 56, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.ingredient-gray-copy', 19.5, { lineHeight: '1.1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.ingredient-item-title', 15.5, { lineHeight: '1.08', nowrap: false });
+    capTranslatedGroup('.ingredient-item .ing-desc', 12, { lineHeight: '1.2', nowrap: false });
+
+    shrinkTranslatedEach('.formula-top-title', 0.87, 34, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.formula-top-copy', 19, { lineHeight: '1.1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.formula-tagline', 30, { lineHeight: '1.08', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.no-additives-fixed', 0.84, 68, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.formula-clean-title', 0.84, 54, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.formula-gray-copy', 19.5, { lineHeight: '1.1', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.formula-safe-title', 0.86, 32, { lineHeight: '1.05', center: true });
+    capTranslatedGroup('.safe-row .name', 18, { lineHeight: '1.15' });
+    capTranslatedGroup('.safe-row .value strong', 20, { lineHeight: '1' });
+    shrinkTranslatedEach('.safe-row .value b', 0.88, 43, { lineHeight: '.8' });
+    shrinkTranslatedEach('.formula-report-title', 0.86, 29, { lineHeight: '1.05', center: true });
+    shrinkTranslatedEach('.formula-verification-copy', 0.86, 20, { lineHeight: '1', center: true });
+    capTranslatedGroup('.formula-bottom-copy', 17, { lineHeight: '1.15' });
+
+    shrinkTranslatedEach('.production-title-line', 0.85, null, { lineHeight: '1', widthAuto: true, heightAuto: true });
+    capTranslatedGroup('.production-intro-copy', 20, { lineHeight: '1.1', widthAuto: true, heightAuto: true });
+    shrinkTranslatedEach('.production-process-title', 0.86, 21, { lineHeight: '1', center: true });
+    capTranslatedGroup('.production-bottom-copy', 16, { lineHeight: '1.15' });
+
+    shrinkTranslatedEach('.legal-head-wrap .head-title', 0.92, 16, { lineHeight: '1.2' });
+    shrinkTranslatedEach('.legal-head-wrap .head-badge', 0.92, 12, { lineHeight: '1' });
+    capTranslatedGroup('.legal-summary-line', 10.5, { lineHeight: '1.5' });
+    capTranslatedGroup('.legal-caution-line', 11.3, { lineHeight: '1.5' });
+  };
+
   const fitAll = () => {
     raf = 0;
     fitHeroPillOneLine();
@@ -2675,8 +2935,10 @@
     updateBathroomGrayCopySizes();
     updateBathroomLabelSizes();
     updateTableGrayCopySizes();
+    updateKitchenMainHeading();
     updateKitchenTitleSizes();
     updateKitchenGrayCopySizes();
+    updateWhyMainTitles();
     updateWhyGrayCopySizes();
     updateWhyChecklistSizes();
     updateMaterialGrayCopySizes();
@@ -2695,6 +2957,7 @@
     equalizeLegalSummaryLineSizes();
     equalizeLegalCautionLineSizes();
     equalizeSafeRowNameSizes();
+    applyRequestedEnglishDownsize();
   };
 
   const requestFit = () => {
