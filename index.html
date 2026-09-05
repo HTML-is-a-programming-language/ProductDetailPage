@@ -81,15 +81,15 @@
     /* HERO feature row: icon center = text center */
     .feature-group {
       position: absolute;
-      width: 92px;
-      padding: 0 4px;
+      width: 96px;
+      padding: 0 2px;
       text-align: center;
       transform: translateX(-50%);
       transform-origin: center top;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1px;
+      gap: 2px;
     }
     .feature-group .feature-copy {
       position: static;
@@ -99,28 +99,41 @@
       word-break: normal;
       transform: none;
       transform-origin: center top;
-      line-height: 1.16;
+      line-height: 1.1;
       text-align: center;
+      margin: 0;
     }
     .feature-group .feature-title {
       font-size: 14px;
       font-weight: 800;
       color: #119de8;
-      min-height: 40px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      display: block;
+      height: auto;
+      min-height: 0;
+      max-height: none;
     }
     .feature-group .feature-desc {
       font-size: 11px;
       color: #555;
-      min-height: 46px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      line-height: 1.2;
+      display: block;
+      height: auto;
+      min-height: 0;
+      max-height: none;
+      line-height: 1.15;
       margin-top: 0;
     }
+
+    .feature-group .feature-copy.ml-fit-box {
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+    .feature-group .feature-copy .ml-fit-inner {
+      transform: none !important;
+      width: 100% !important;
+    }
+
     .feature-separator {
       position: absolute;
       top: 1236px;
@@ -711,6 +724,16 @@
 
   const prepare = (el) => {
     if (!el || el.dataset.mlFitReady === '1') return;
+
+    if (el.closest('.feature-group')) {
+      el.setAttribute('dir', 'auto');
+      el.style.height = 'auto';
+      el.style.minHeight = '0';
+      el.style.maxHeight = 'none';
+      el.style.whiteSpace = 'normal';
+      el.style.overflow = 'visible';
+      return;
+    }
 
     const cs = getComputedStyle(el);
     const fontSize = Math.max(1, toNumber(cs.fontSize, 16));
